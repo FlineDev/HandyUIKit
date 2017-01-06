@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HandyUIKit.xcscheme</key>
+		<key>HandyUIKit-iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>HandyUIKit-tvOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>A14E0AC41E1F986A00DFC788</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A14E0ADA1E1F987C00DFC788</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A14E0AE21E1F987C00DFC788</key>
 		<dict>
 			<key>primary</key>
 			<true/>
