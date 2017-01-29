@@ -1,11 +1,11 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/Flinesoft/HandySwift/stable/Logo.png"
+<img src="https://github.com/Dschee/HandyUIKit/blob/stable/Logo.png?raw=true"
 width=600 height=167>
 </p>
 
 <p align="center">
-<a href="https://www.bitrise.io/app/810d996d77fb0abf">
-<img src="https://www.bitrise.io/app/810d996d77fb0abf.svg?token=kr27kfE1r8jE0qdtpXgIzw&branch=stable"
+<a href="https://www.bitrise.io/app/c77eb6063e52fe8e">
+<img src="https://www.bitrise.io/app/c77eb6063e52fe8e.svg?token=OYicGI_yNhaQnpOsnVEypw&branch=stable"
 alt="Build Status">
 </a>
 <a href="https://codebeat.co/projects/github-com-flinesoft-handyuikit">
@@ -18,7 +18,7 @@ alt="Version: 1.0.0">
 </a>
 <img src="https://img.shields.io/badge/Swift-3.0-FFAC45.svg"
 alt="Swift: 3.0">
-<img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS%20%7C%20OS%20X-FF69B4.svg"
+<img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-FF69B4.svg"
 alt="Platforms: iOS | tvOS">
 <a href="https://github.com/Flinesoft/HandyUIKit/blob/stable/LICENSE.md">
 <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg"
@@ -35,9 +35,11 @@ alt="License: MIT">
 </p>
 
 
-# HandySwift
+# HandyUIKit
 
-The goal of this library is to provide handy features that didn't make it to the Swift standard library (yet) due to many different reasons. Those could be that the Swift community wants to keep the standard library clean and manageable or simply hasn't finished discussion on a specific feature yet.
+The goal of this library is to provide handy UI features that didn't make it into the existing UIKit frameworks (yet).
+
+See also [HandySwift](https://github.com/Flinesoft/HandySwift) for handy features that didn't make it into the Swift standard library (yet).
 
 ## Installation
 
@@ -81,7 +83,7 @@ Please have a look at the UsageExamples.playground for a complete list of featur
 Open the Playground from within the `.xcworkspace` in order for it to work.
 
 
-### ColorExtension (iOS & tvOS only)
+### ColorExtension
 
 #### .rgba
 Returns a tuple with named RGBA parameters for easy access.
@@ -123,7 +125,7 @@ let newHsbaColor = hsbaColor.change(.brightness, to: 0.8)
 newHsbaColor.hsba.brightness // => 0.8
 ```
 
-### CoreGraphicsExtensions (partly iOS & tvOS only)
+### CoreGraphicsExtensions
 
 #### CGSize.inPixels / CGSize.inPixels(screen:)
 Returns a new CGSize object with the width and height converted to true pixels on screen.
@@ -176,7 +178,7 @@ let originZeroRect2 = CGRect(width: 100, height: 50)
 Contributions are welcome. Please just open an Issue on GitHub to discuss a point or request a feature or send a Pull Request with your suggestion. If there's a related discussion on the Swift Evolution mailing list, please also post the thread name with a link.
 
 Pull requests with new features will only be accepted when the following are given:
-- The feature is **handy** but not (yet) part of the Swift standard library.
+- The UI feature is **handy** but not (yet) part of UIKit.
 - **Tests** for the new feature exist and all tests pass successfully.
 - **Usage examples** of the new feature are given in the Playgrounds.
 
