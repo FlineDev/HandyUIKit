@@ -82,7 +82,7 @@ Please have a look at the UsageExamples.playground for a complete list of featur
 Open the Playground from within the `.xcworkspace` in order for it to work.
 
 ---
-**Overview of all features provided:**
+#### Feature Overview
 
 - **Extensions**
   - [UIColor](#uicolorextension)
