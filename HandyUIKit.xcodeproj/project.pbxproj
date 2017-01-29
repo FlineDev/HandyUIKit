@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		A14E0AC61E1F986A00DFC788 /* HandyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E0ABC1E1F986A00DFC788 /* HandyUIKit.framework */; };
 		A14E0AE41E1F987C00DFC788 /* HandyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E0ADB1E1F987C00DFC788 /* HandyUIKit.framework */; };
-		A14E0B041E1F98EC00DFC788 /* HandyUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E0AF91E1F98E400DFC788 /* HandyUIKitTests.swift */; };
-		A14E0B051E1F98EC00DFC788 /* HandyUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E0AF91E1F98E400DFC788 /* HandyUIKitTests.swift */; };
 		A14E0B0F1E1F9B3100DFC788 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E0B0D1E1F9B3100DFC788 /* UIScrollViewExtension.swift */; };
 		A14E0B101E1F9B3100DFC788 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E0B0D1E1F9B3100DFC788 /* UIScrollViewExtension.swift */; };
 		A14E0B111E1F9B3100DFC788 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */; };
 		A14E0B121E1F9B3100DFC788 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */; };
+		A1F221681E3E07DD00419B06 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F221671E3E07DD00419B06 /* UIColorExtension.swift */; };
+		A1F221691E3E07DD00419B06 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F221671E3E07DD00419B06 /* UIColorExtension.swift */; };
+		A1F2216B1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2216A1E3E08AE00419B06 /* CoreGraphicsExtension.swift */; };
+		A1F2216C1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2216A1E3E08AE00419B06 /* CoreGraphicsExtension.swift */; };
+		A1F221701E3E0B8400419B06 /* CoreExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2216D1E3E0B7700419B06 /* CoreExtensionTests.swift */; };
+		A1F221711E3E0B8500419B06 /* CoreExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2216D1E3E0B7700419B06 /* CoreExtensionTests.swift */; };
+		A1F2217C1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift */; };
+		A1F2217D1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +46,14 @@
 		A14E0ADB1E1F987C00DFC788 /* HandyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E0AE31E1F987C00DFC788 /* HandyUIKit-tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandyUIKit-tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E0AF61E1F98E400DFC788 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A14E0AF91E1F98E400DFC788 /* HandyUIKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandyUIKitTests.swift; sourceTree = "<group>"; };
 		A14E0AFB1E1F98E400DFC788 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14E0B0D1E1F9B3100DFC788 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A1F221671E3E07DD00419B06 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A1F2216A1E3E08AE00419B06 /* CoreGraphicsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtension.swift; sourceTree = "<group>"; };
+		A1F2216D1E3E0B7700419B06 /* CoreExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreExtensionTests.swift; sourceTree = "<group>"; };
+		A1F221791E3E15FA00419B06 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 		A14E0AB21E1F986A00DFC788 = {
 			isa = PBXGroup;
 			children = (
+				A1F221781E3E15E500419B06 /* Root Files */,
 				A14E0AF21E1F98E400DFC788 /* Sources */,
 				A14E0AF71E1F98E400DFC788 /* Tests */,
 				A14E0ABD1E1F986A00DFC788 /* Products */,
@@ -137,7 +148,8 @@
 		A14E0AF81E1F98E400DFC788 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				A14E0AF91E1F98E400DFC788 /* HandyUIKitTests.swift */,
+				A1F2216D1E3E0B7700419B06 /* CoreExtensionTests.swift */,
+				A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -155,8 +167,18 @@
 			children = (
 				A14E0B0D1E1F9B3100DFC788 /* UIScrollViewExtension.swift */,
 				A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */,
+				A1F221671E3E07DD00419B06 /* UIColorExtension.swift */,
+				A1F2216A1E3E08AE00419B06 /* CoreGraphicsExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1F221781E3E15E500419B06 /* Root Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1F221791E3E15FA00419B06 /* README.md */,
+			);
+			name = "Root Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +363,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F221681E3E07DD00419B06 /* UIColorExtension.swift in Sources */,
+				A1F2216B1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */,
 				A14E0B111E1F9B3100DFC788 /* UIViewExtension.swift in Sources */,
 				A14E0B0F1E1F9B3100DFC788 /* UIScrollViewExtension.swift in Sources */,
 			);
@@ -350,7 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14E0B041E1F98EC00DFC788 /* HandyUIKitTests.swift in Sources */,
+				A1F2217C1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift in Sources */,
+				A1F221701E3E0B8400419B06 /* CoreExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +383,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F221691E3E07DD00419B06 /* UIColorExtension.swift in Sources */,
+				A1F2216C1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */,
 				A14E0B121E1F9B3100DFC788 /* UIViewExtension.swift in Sources */,
 				A14E0B101E1F9B3100DFC788 /* UIScrollViewExtension.swift in Sources */,
 			);
@@ -367,7 +394,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14E0B051E1F98EC00DFC788 /* HandyUIKitTests.swift in Sources */,
+				A1F2217D1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift in Sources */,
+				A1F221711E3E0B8500419B06 /* CoreExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,6 +679,7 @@
 				A14E0AD21E1F986A00DFC788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A14E0AD31E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-iOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -659,6 +688,7 @@
 				A14E0AD51E1F986A00DFC788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A14E0AEC1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -667,6 +697,7 @@
 				A14E0AEE1E1F987C00DFC788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A14E0AEF1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-tvOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -675,6 +706,7 @@
 				A14E0AF11E1F987C00DFC788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
