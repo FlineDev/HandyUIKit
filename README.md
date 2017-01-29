@@ -138,18 +138,18 @@ hsbaColor.hsba.alpha // => 0.4
 Creates a new `UIColor` object with a single attribute changed by a given difference using addition.
 
 ``` Swift
-rgbaColor.rgba.blue // => 0.3
-let newRgbaColor = rgbaColor.change(.blue, by: 0.2)
-newRgbaColor.rgba.blue // => 0.5
+color.rgba.blue // => 0.3
+let newColor = color.change(.blue, by: 0.2)
+newColor.rgba.blue // => 0.5
 ```
 
 #### .change(ChangeableAttribute, to:)
 Creates a new `UIColor` object with the value of a single attribute set to a given value.
 
 ``` Swift
-hsbaColor.hsba.brightness // => 0.3
-let newHsbaColor = hsbaColor.change(.brightness, to: 0.8)
-newHsbaColor.hsba.brightness // => 0.8
+color.hlca.luminance // => 0.3
+let newColor = color.change(.luminance, to: 0.8)
+newColor.hlca.luminance // => 0.8
 ```
 
 ### CoreGraphicsExtensions
