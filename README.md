@@ -81,8 +81,16 @@ Refer to [CocoaPods.org](https://cocoapods.org) for detailed / updates instructi
 Please have a look at the UsageExamples.playground for a complete list of features provided.
 Open the Playground from within the `.xcworkspace` in order for it to work.
 
+---
+**Overview of all features provided:**
 
-### ColorExtension
+- **Extensions**
+  - [UIColor](#uicolorextension)
+  - [CoreGraphics](#coregraphicsextensions)
+
+---
+
+### UIColorExtension
 
 #### .rgba
 Returns a tuple with named RGBA parameters for easy access.
