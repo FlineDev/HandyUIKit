@@ -10,6 +10,15 @@ import XCTest
 @testable import HandyUIKit
 
 class ColorExtensionTests: XCTestCase {
+    func testHlca() {
+        let color = UIColor(hue: 0.1, luminance: 0.2, chroma: 0.3, alpha: 0.4)
+
+        XCTAssertEqualWithAccuracy(color.hlca.hue, 0.1, accuracy: 0.001)
+        XCTAssertEqualWithAccuracy(color.hlca.luminance, 0.2, accuracy: 0.001)
+        XCTAssertEqualWithAccuracy(color.hlca.chroma, 0.3, accuracy: 0.001)
+        XCTAssertEqualWithAccuracy(color.hlca.alpha, 0.4, accuracy: 0.001)
+    }
+
     func testRgba() {
         let color = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.4)
 
@@ -38,7 +47,7 @@ class ColorExtensionTests: XCTestCase {
         XCTAssertEqualWithAccuracy(changedRgbaColor.rgba.alpha, 0.5, accuracy: 0.001)
 
         let hsbaColor = UIColor(hue: 0.1, saturation: 0.2, brightness: 0.3, alpha: 0.4)
-        let changedHsbaColor = hsbaColor.change(.hue, by: 0.1).change(.saturation, by: 0.1).change(.brightness, by: 0.1).change(.alpha, by: 0.1)
+        let changedHsbaColor = hsbaColor.change(.hueHSB, by: 0.1).change(.saturation, by: 0.1).change(.brightness, by: 0.1).change(.alpha, by: 0.1)
 
         XCTAssertEqualWithAccuracy(changedHsbaColor.hsba.hue, 0.2, accuracy: 0.001)
         XCTAssertEqualWithAccuracy(changedHsbaColor.hsba.saturation, 0.3, accuracy: 0.001)
@@ -56,7 +65,7 @@ class ColorExtensionTests: XCTestCase {
         XCTAssertEqualWithAccuracy(changedRgbaColor.rgba.alpha, 0.7, accuracy: 0.001)
 
         let hsbaColor = UIColor(hue: 0.1, saturation: 0.2, brightness: 0.3, alpha: 0.4)
-        let changedHsbaColor = hsbaColor.change(.hue, to: 1.0).change(.saturation, to: 0.9).change(.brightness, to: 0.8).change(.alpha, to: 0.7)
+        let changedHsbaColor = hsbaColor.change(.hueHSB, to: 1.0).change(.saturation, to: 0.9).change(.brightness, to: 0.8).change(.alpha, to: 0.7)
 
         XCTAssertEqualWithAccuracy(changedHsbaColor.hsba.hue, 0.0, accuracy: 0.001)
         XCTAssertEqualWithAccuracy(changedHsbaColor.hsba.saturation, 0.9, accuracy: 0.001)

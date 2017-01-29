@@ -2,7 +2,20 @@ import UIKit
 import HandyUIKit
 import PlaygroundSupport
 
-//: ## ColorExtension (iOS & tvOS only)
+//: ## ColorExtension
+//: ### init(hue:luminance:chroma:)
+//: Initializes a UIColor with given HLC (LCh) colors normed to ranges from 0 to 1.
+
+let hlcaColor = UIColor(hue: 180/360, luminance: 30/100, chroma: 125/128, alpha: 1)
+
+//: ### .hlca
+//: Returns a tuple with named HLCA parameters for easy access.
+
+hlcaColor.hlca.hue
+hlcaColor.hlca.luminance
+hlcaColor.hlca.chroma
+hlcaColor.hlca.alpha
+
 //: ### .rgba
 //: Returns a tuple with named RGBA parameters for easy access.
 
@@ -11,7 +24,6 @@ rgbaColor.rgba.red
 rgbaColor.rgba.green
 rgbaColor.rgba.blue
 rgbaColor.rgba.alpha
-
 
 //: ### .hsba
 //: Returns a tuple with named HSBA parameters for easy access.
@@ -25,6 +37,10 @@ hsbaColor.hsba.alpha
 //: ### .change(ChangeableAttribute, by:)
 //: Creates a new `UIColor` object with a single attribute changed by a given difference using addition.
 
+hlcaColor.hlca.luminance
+let newHlcaColor = hlcaColor.change(.luminance, by: 0.5)
+newHlcaColor.hlca.luminance
+
 rgbaColor.rgba.blue
 let newRgbaColor = rgbaColor.change(.blue, by: 0.2)
 newRgbaColor.rgba.blue
@@ -35,6 +51,7 @@ newRgbaColor.rgba.blue
 hsbaColor.hsba.brightness
 let newHsbaColor = hsbaColor.change(.brightness, to: 0.8)
 newHsbaColor.hsba.brightness
+
 
 //: ## CoreGraphicsExtensions
 //: ### CGSize.inPixels / CGSize.inPixels(screen:)

@@ -92,6 +92,25 @@ Open the Playground from within the `.xcworkspace` in order for it to work.
 
 ### UIColorExtension
 
+NOTE: If you are using the RGB color system to define your colors, you definitely should checkout **[this great blog post](https://medium.com/@erikdkennedy/color-in-ui-design-a-practical-framework-e18cacd97f9e#.krfv78qsm)** on **why RGB is a bad choice** for most projects (not all, of course). And if you think you found the perfect way of changing the brightness of a color using the HSB system, you'll be proved wrong there, too. Honestly, it's worth a read. If you don't want though: "Luminance" is the keyword here and it is the single most important reason why HandyUIKit integrates **native support for the HLC** (or sometimes called LCh) color system to the `UIColor` class. HLC is a more human-understandable transformation of the LAB color space and shares its great advantage of having a single value that you need to change to **correctly change the perceived brightness** of any given color: The `luminance` value. And changing the brightness can save you a lot of time when working with colors in apps, as described in the blog post.
+
+#### init(hue:luminance:chroma:)
+Initializes a UIColor with given HLC (LCh) colors normed to ranges from 0 to 1.
+
+``` Swift
+let hlcaColor = UIColor(hue: 180/360, luminance: 30/100, chroma: 125/128, alpha: 1)
+```
+
+#### .hlca
+Returns a tuple with named HLCA parameters for easy access.
+
+``` Swift
+hlcaColor.hlca.hue // => 0.5
+hlcaColor.hlca.luminance // => 0.3
+hlcaColor.hlca.chroma // => 0.97
+hlcaColor.hlca.alpha // => 1.0
+```
+
 #### .rgba
 Returns a tuple with named RGBA parameters for easy access.
 
@@ -113,6 +132,7 @@ hsbaColor.hsba.saturation // => 0.2
 hsbaColor.hsba.brightness // => 0.3
 hsbaColor.hsba.alpha // => 0.4
 ```
+
 
 #### .change(ChangeableAttribute, by:)
 Creates a new `UIColor` object with a single attribute changed by a given difference using addition.
