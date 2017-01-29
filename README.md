@@ -37,15 +37,14 @@ alt="License: MIT">
 
 # HandyUIKit
 
-The goal of this library is to provide handy UI features that didn't make it into the existing UIKit frameworks (yet).
+The goal of this library is to provide **handy UI related features** that we feel like they should have been part of the UIKit frameworks themselves. Therefore this library is intended to inherit solutions for common tasks that appear in daily programming and tries to comply to the same naming conventions as already used in the Apple frameworks.
 
-See also [HandySwift](https://github.com/Flinesoft/HandySwift) for handy features that didn't make it into the Swift standard library (yet).
+If you like this, please also checkout [HandySwift](https://github.com/Flinesoft/HandySwift) for handy features that didn't make it into the Swift standard library. It includes additions that are not UI related.
 
 ## Installation
 
 Currently the recommended way of installing this library is via [Carthage](https://github.com/Carthage/Carthage).
 [Cocoapods](https://github.com/CocoaPods/CocoaPods) is supported, too.
-[Swift Package Manager](https://github.com/apple/swift-package-manager) was targeted but didn't work in my tests.
 
 You can of course also just include this framework manually into your project by downloading it or by using git submodules.
 
@@ -69,7 +68,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'MyAppTarget' do
-pod 'HandyUIKit', '~> 1.0'
+  pod 'HandyUIKit', '~> 1.0'
 end
 ```
 
@@ -171,7 +170,6 @@ let someSize = CGSize(width: 100, height: 50)
 let originZeroRect1 = CGRect(size: someSize)
 let originZeroRect2 = CGRect(width: 100, height: 50)
 ```
-
 
 ## Contributing
 
