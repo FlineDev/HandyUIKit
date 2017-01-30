@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "00D3D5312C073D1DF2E15F5B96147F173BA8E73B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "00D3D5312C073D1DF2E15F5B96147F173BA8E73B" : 9223372036854775807,
+    "C0F6F4A9FFA90C8B085DCED78C3E68E1B6169F5F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1F0FFDE4-B7F4-451D-8950-B4DEBED08ACB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "00D3D5312C073D1DF2E15F5B96147F173BA8E73B" : "HandyUIKit\/",
+    "C0F6F4A9FFA90C8B085DCED78C3E68E1B6169F5F" : "HandySwift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HandyUIKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HandyUIKit.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Dschee\/HandyUIKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "00D3D5312C073D1DF2E15F5B96147F173BA8E73B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Flinesoft\/HandySwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C0F6F4A9FFA90C8B085DCED78C3E68E1B6169F5F"
+    }
+  ]
+}
