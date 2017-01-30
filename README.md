@@ -9,7 +9,7 @@ width=600 height=167>
 alt="Build Status">
 </a>
 <a href="https://codebeat.co/projects/github-com-flinesoft-handyuikit">
-<img src="https://codebeat.co/badges/283e545d-02e9-4fcf-aabc-40cacfbfe26c"
+<img src="https://codebeat.co/badges/01dd8c86-da28-4f46-9fb0-3aa38df2532a"
 alt="codebeat badge">
 </a>
 <a href="https://github.com/Flinesoft/HandyUIKit/releases">
