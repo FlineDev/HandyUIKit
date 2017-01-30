@@ -56,11 +56,11 @@ Place one of the following lines to your Cartfile:
 github "Flinesoft/HandyUIKit"
 ```
 
-Now run `carthage update`. Then drag & drop the HandySwift.framework in the Carthage/build folder to your project. Now you can `import HandyUIKit` in each class you want to use its features. Refer to the [Carthage README](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) for detailed / updated instructions.
+Now run `carthage update`. Then drag & drop the HandyUIKit.framework in the Carthage/build folder to your project. Now you can `import HandyUIKit` in each class you want to use its features. Refer to the [Carthage README](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) for detailed / updated instructions.
 
 ### CocoaPods
 
-Add the line `pod 'HandySwift'` to your target in your `Podfile` and make sure to include `use_frameworks!`
+Add the line `pod 'HandyUIKit'` to your target in your `Podfile` and make sure to include `use_frameworks!`
 at the top. The result might look similar to this:
 
 ``` Ruby

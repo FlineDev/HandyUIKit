@@ -1,0 +1,17 @@
+opt_in_rules:
+- empty_count
+# - missing_docs
+
+disabled_rules:
+- vertical_whitespace
+- cyclomatic_complexity
+
+included:
+- Sources
+- Tests
+
+excluded:
+- Carthage
+- Sources/Code/Extensions/ColorSpaces.swift
+
+line_length: 150

@@ -8,6 +8,8 @@
 //  Original source: https://github.com/timrwood/ColorSpaces
 //
 
+// swiftlint:disable
+
 import UIKit
 
 // MARK: - Constants
