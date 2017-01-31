@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		A14E0AC61E1F986A00DFC788 /* HandyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E0ABC1E1F986A00DFC788 /* HandyUIKit.framework */; };
 		A14E0AE41E1F987C00DFC788 /* HandyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E0ADB1E1F987C00DFC788 /* HandyUIKit.framework */; };
-		A14E0B0F1E1F9B3100DFC788 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E0B0D1E1F9B3100DFC788 /* UIScrollViewExtension.swift */; };
-		A14E0B101E1F9B3100DFC788 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E0B0D1E1F9B3100DFC788 /* UIScrollViewExtension.swift */; };
 		A14E0B111E1F9B3100DFC788 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */; };
 		A14E0B121E1F9B3100DFC788 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */; };
 		A1F221681E3E07DD00419B06 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F221671E3E07DD00419B06 /* UIColorExtension.swift */; };
@@ -49,7 +47,6 @@
 		A14E0AE31E1F987C00DFC788 /* HandyUIKit-tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandyUIKit-tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E0AF61E1F98E400DFC788 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14E0AFB1E1F98E400DFC788 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A14E0B0D1E1F9B3100DFC788 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A1F221671E3E07DD00419B06 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		A1F2216A1E3E08AE00419B06 /* CoreGraphicsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtension.swift; sourceTree = "<group>"; };
@@ -174,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				A1F2217E1E3E777600419B06 /* Helpers */,
-				A14E0B0D1E1F9B3100DFC788 /* UIScrollViewExtension.swift */,
 				A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */,
 				A1F221671E3E07DD00419B06 /* UIColorExtension.swift */,
 				A1F2216A1E3E08AE00419B06 /* CoreGraphicsExtension.swift */,
@@ -422,7 +418,6 @@
 				A1F221681E3E07DD00419B06 /* UIColorExtension.swift in Sources */,
 				A1F2216B1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */,
 				A14E0B111E1F9B3100DFC788 /* UIViewExtension.swift in Sources */,
-				A14E0B0F1E1F9B3100DFC788 /* UIScrollViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +438,6 @@
 				A1F221691E3E07DD00419B06 /* UIColorExtension.swift in Sources */,
 				A1F2216C1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */,
 				A14E0B121E1F9B3100DFC788 /* UIViewExtension.swift in Sources */,
-				A14E0B101E1F9B3100DFC788 /* UIScrollViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
