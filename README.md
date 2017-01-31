@@ -13,8 +13,8 @@ alt="Build Status">
 alt="codebeat badge">
 </a>
 <a href="https://github.com/Flinesoft/HandyUIKit/releases">
-<img src="https://img.shields.io/badge/Version-1.1.0-blue.svg"
-alt="Version: 1.1.0">
+<img src="https://img.shields.io/badge/Version-1.2.0-blue.svg"
+alt="Version: 1.2.0">
 </a>
 <img src="https://img.shields.io/badge/Swift-3.0-FFAC45.svg"
 alt="Swift: 3.0">
@@ -86,7 +86,7 @@ Open the Playground from within the `.xcworkspace` in order for it to work.
 
 - **Extensions**
   - [UIColor](#uicolorextension)
-  - [UIViewExtension](#uiviewextension)
+  - [UIView](#uiviewextension)
   - [CoreGraphics](#coregraphicsextensions)
 
 ---
@@ -155,7 +155,7 @@ newColor.hlca.luminance // => 0.8
 
 ### UIViewExtension
 
-#### toImage(size:)
+#### .toImage(size:)
 Takes a screenshot of the UIView's content optionally resizing the result to a given size.
 
 ``` Swift
@@ -169,6 +169,17 @@ subview.backgroundColor = .red
 let fullSizeContent = view.toImage() // => <UIImage: width: 500, height: 500>
 let downSizedContent = view.toImage(size: CGSize(width: 80, height: 80)) 
 // => <UIImage: width: 80, height: 80>
+```
+
+#### .bindEdgesToSuperview()
+Adds constraints to the subview so it always has the same size and position as the superview.
+
+``` Swift
+view.frame // => {x: 0, y: 0, w: 500, h: 500}
+subview.frame // => {x: 150, y: 150, w: 200, h: 200}
+subview.bindEdgesToSuperview()
+view.layoutIfNeeded()
+subview.frame // => {x: 0, y: 0, w: 500, h: 500}
 ```
 
 

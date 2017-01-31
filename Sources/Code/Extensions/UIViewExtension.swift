@@ -22,4 +22,17 @@ extension UIView {
         drawHierarchy(in: rect, afterScreenUpdates: true)
         return UIGraphicsGetImageFromCurrentImageContext()!
     }
+
+    /// Adds constraints to the superview so that this view has same size and position.
+    /// Note: This fails the build if the `superview` is `nil` – add it as a subview before calling this.
+    public func bindEdgesToSuperview() {
+        guard let superview = superview else {
+            preconditionFailure("`superview` was nil – call `addSubview(view: UIView)` before calling `bindEdgesToSuperview()` to fix this.")
+        }
+        translatesAutoresizingMaskIntoConstraints = false
+        ["H:|-0-[subview]-0-|", "V:|-0-[subview]-0-|"].forEach { visualFormat in
+            superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: visualFormat, options: .directionLeadingToTrailing,
+                                                                    metrics: nil, views: ["subview": self]))
+        }
+    }
 }
