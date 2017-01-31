@@ -86,7 +86,7 @@ Open the Playground from within the `.xcworkspace` in order for it to work.
 
 - **Extensions**
   - [UIColor](#uicolorextension)
-  - [UIViewExtension](#uiviewextension)
+  - [UIView](#uiviewextension)
   - [CoreGraphics](#coregraphicsextensions)
 
 ---
