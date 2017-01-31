@@ -13,8 +13,8 @@ alt="Build Status">
 alt="codebeat badge">
 </a>
 <a href="https://github.com/Flinesoft/HandyUIKit/releases">
-<img src="https://img.shields.io/badge/Version-1.0.0-blue.svg"
-alt="Version: 1.0.0">
+<img src="https://img.shields.io/badge/Version-1.1.0-blue.svg"
+alt="Version: 1.1.0">
 </a>
 <img src="https://img.shields.io/badge/Swift-3.0-FFAC45.svg"
 alt="Swift: 3.0">
@@ -68,7 +68,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'MyAppTarget' do
-  pod 'HandyUIKit', '~> 1.0'
+  pod 'HandyUIKit', '~> 1.1'
 end
 ```
 
