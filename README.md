@@ -50,7 +50,7 @@ You can of course also just include this framework manually into your project by
 
 ### Carthage
 
-Place one of the following lines to your Cartfile:
+Place the following line to your Cartfile:
 
 ``` Swift
 github "Flinesoft/HandyUIKit"
