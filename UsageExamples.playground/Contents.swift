@@ -54,7 +54,7 @@ newHsbaColor.hsba.brightness
 
 
 //: ## UIViewExtension
-//: ### toImage(size:)
+//: ### .toImage(size:)
 //: Takes a screenshot of the UIView's content optionally resizing the result to a given size.
 
 let view = UIView(frame: CGRect(width: 500, height: 500))

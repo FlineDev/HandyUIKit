@@ -155,7 +155,7 @@ newColor.hlca.luminance // => 0.8
 
 ### UIViewExtension
 
-#### toImage(size:)
+#### .toImage(size:)
 Takes a screenshot of the UIView's content optionally resizing the result to a given size.
 
 ``` Swift
