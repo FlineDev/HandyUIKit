@@ -171,6 +171,17 @@ let downSizedContent = view.toImage(size: CGSize(width: 80, height: 80))
 // => <UIImage: width: 80, height: 80>
 ```
 
+#### .bindEdgesToSuperview()
+Adds constraints to the subview so it always has the same size and position as the superview.
+
+``` Swift
+view.frame // => {x: 0, y: 0, w: 500, h: 500}
+subview.frame // => {x: 150, y: 150, w: 200, h: 200}
+subview.bindEdgesToSuperview()
+view.layoutIfNeeded()
+subview.frame // => {x: 0, y: 0, w: 500, h: 500}
+```
+
 
 ### CoreGraphicsExtensions
 

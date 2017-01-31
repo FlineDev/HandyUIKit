@@ -59,6 +59,7 @@ newHsbaColor.hsba.brightness
 
 let view = UIView(frame: CGRect(width: 500, height: 500))
 let subview = UIView(frame: CGRect(width: 200, height: 200))
+subview.center = view.center
 view.addSubview(subview)
 
 view.backgroundColor = .blue
@@ -66,6 +67,15 @@ subview.backgroundColor = .red
 
 let fullSizeContent = view.toImage()
 let downSizedContent = view.toImage(size: CGSize(width: 50, height: 50))
+
+//: ### .bindEdgesToSuperview()
+//: Adds constraints to the subview so it always has the same size and position as the superview.
+
+view.frame
+subview.frame
+subview.bindEdgesToSuperview()
+view.layoutIfNeeded()
+subview.frame
 
 
 //: ## CoreGraphicsExtensions
