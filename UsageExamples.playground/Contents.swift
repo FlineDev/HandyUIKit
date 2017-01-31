@@ -2,7 +2,7 @@ import UIKit
 import HandyUIKit
 import PlaygroundSupport
 
-//: ## ColorExtension
+//: ## UIColorExtension
 //: ### init(hue:luminance:chroma:)
 //: Initializes a UIColor with given HLC (LCh) colors normed to ranges from 0 to 1.
 
@@ -51,6 +51,21 @@ newRgbaColor.rgba.blue
 hsbaColor.hsba.brightness
 let newHsbaColor = hsbaColor.change(.brightness, to: 0.8)
 newHsbaColor.hsba.brightness
+
+
+//: ## UIViewExtension
+//: ### toImage(size:)
+//: Takes a screenshot of the UIView's content optionally resizing the result to a given size.
+
+let view = UIView(frame: CGRect(width: 500, height: 500))
+let subview = UIView(frame: CGRect(width: 200, height: 200))
+view.addSubview(subview)
+
+view.backgroundColor = .blue
+subview.backgroundColor = .red
+
+let fullSizeContent = view.toImage()
+let downSizedContent = view.toImage(size: CGSize(width: 50, height: 50))
 
 
 //: ## CoreGraphicsExtensions

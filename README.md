@@ -86,6 +86,7 @@ Open the Playground from within the `.xcworkspace` in order for it to work.
 
 - **Extensions**
   - [UIColor](#uicolorextension)
+  - [UIViewExtension](#uiviewextension)
   - [CoreGraphics](#coregraphicsextensions)
 
 ---
@@ -151,6 +152,25 @@ color.hlca.luminance // => 0.3
 let newColor = color.change(.luminance, to: 0.8)
 newColor.hlca.luminance // => 0.8
 ```
+
+### UIViewExtension
+
+#### toImage(size:)
+Takes a screenshot of the UIView's content optionally resizing the result to a given size.
+
+``` Swift
+let view = UIView(frame: CGRect(width: 500, height: 500))
+let subview = UIView(frame: CGRect(width: 200, height: 200))
+view.addSubview(subview)
+
+view.backgroundColor = .blue
+subview.backgroundColor = .red
+
+let fullSizeContent = view.toImage() // => <UIImage: width: 500, height: 500>
+let downSizedContent = view.toImage(size: CGSize(width: 80, height: 80)) 
+// => <UIImage: width: 80, height: 80>
+```
+
 
 ### CoreGraphicsExtensions
 
