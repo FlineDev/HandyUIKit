@@ -13,8 +13,8 @@ alt="Build Status">
 alt="codebeat badge">
 </a>
 <a href="https://github.com/Flinesoft/HandyUIKit/releases">
-<img src="https://img.shields.io/badge/Version-1.2.0-blue.svg"
-alt="Version: 1.2.0">
+<img src="https://img.shields.io/badge/Version-1.2.1-blue.svg"
+alt="Version: 1.2.1">
 </a>
 <img src="https://img.shields.io/badge/Swift-3.0-FFAC45.svg"
 alt="Swift: 3.0">
@@ -50,7 +50,7 @@ You can of course also just include this framework manually into your project by
 
 ### Carthage
 
-Place one of the following lines to your Cartfile:
+Place the following line to your Cartfile:
 
 ``` Swift
 github "Flinesoft/HandyUIKit"
