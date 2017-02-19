@@ -13,8 +13,8 @@ alt="Build Status">
 alt="codebeat badge">
 </a>
 <a href="https://github.com/Flinesoft/HandyUIKit/releases">
-<img src="https://img.shields.io/badge/Version-1.2.1-blue.svg"
-alt="Version: 1.2.1">
+<img src="https://img.shields.io/badge/Version-1.3.0-blue.svg"
+alt="Version: 1.3.0">
 </a>
 <img src="https://img.shields.io/badge/Swift-3.0-FFAC45.svg"
 alt="Swift: 3.0">
@@ -53,7 +53,7 @@ You can of course also just include this framework manually into your project by
 Place the following line to your Cartfile:
 
 ``` Swift
-github "Flinesoft/HandyUIKit"
+github "Flinesoft/HandyUIKit" ~> 1.3
 ```
 
 Now run `carthage update`. Then drag & drop the HandyUIKit.framework in the Carthage/build folder to your project. Now you can `import HandyUIKit` in each class you want to use its features. Refer to the [Carthage README](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) for detailed / updated instructions.
@@ -68,7 +68,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'MyAppTarget' do
-  pod 'HandyUIKit', '~> 1.1'
+  pod 'HandyUIKit', '~> 1.3'
 end
 ```
 
@@ -229,6 +229,27 @@ let someSize = CGSize(width: 100, height: 50)
 let originZeroRect1 = CGRect(size: someSize)
 let originZeroRect2 = CGRect(width: 100, height: 50)
 ```
+
+
+### StringExtension
+#### .width(for fixedHeight:font:)
+Calculates and returns the height needed to fit the text into a width-constrained rect.
+
+``` Swift
+let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+loremIpsum.height(forFixedWidth: 300, font: UIFont.systemFont(ofSize: 14, weight: UIFontWeightBold))
+// => 183.77734375
+```
+
+#### .height(for fixedWidth:font:)
+Calculates and returns the width needed to fit the text into a height-constrained rect.
+
+``` Swift
+loremIpsum.width(forFixedHeight: 21, font: UIFont.systemFont(ofSize: 12, weight: UIFontWeightUltraLight))
+// => 2351.0390625
+```
+
 
 ## Contributing
 

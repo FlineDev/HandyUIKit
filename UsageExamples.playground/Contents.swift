@@ -107,3 +107,17 @@ let someSize = CGSize(width: 100, height: 50)
 
 let originZeroRect1 = CGRect(size: someSize)
 let originZeroRect2 = CGRect(width: 100, height: 50)
+
+
+//: ## StringExtension
+//: ### .width(for fixedHeight:font:)
+//: Calculates and returns the height needed to fit the text into a width-constrained rect.
+
+let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+loremIpsum.height(forFixedWidth: 300, font: UIFont.systemFont(ofSize: 14, weight: UIFontWeightBold))
+
+//: ### .height(for fixedWidth:font:)
+//: Calculates and returns the width needed to fit the text into a height-constrained rect.
+
+loremIpsum.width(forFixedHeight: 21, font: UIFont.systemFont(ofSize: 12, weight: UIFontWeightUltraLight))
