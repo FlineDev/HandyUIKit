@@ -121,3 +121,8 @@ loremIpsum.height(forFixedWidth: 300, font: UIFont.systemFont(ofSize: 14, weight
 //: Calculates and returns the width needed to fit the text into a height-constrained rect.
 
 loremIpsum.width(forFixedHeight: 21, font: UIFont.systemFont(ofSize: 12, weight: UIFontWeightUltraLight))
+
+//: ### .hyphenated()
+//: A hyphenated NSAttributedString with justified alignment and word wrapping line break mode.
+
+loremIpsum.hyphenated()

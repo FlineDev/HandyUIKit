@@ -88,6 +88,7 @@ Open the Playground from within the `.xcworkspace` in order for it to work.
   - [UIColor](#uicolorextension)
   - [UIView](#uiviewextension)
   - [CoreGraphics](#coregraphicsextensions)
+  - [StringExtension](#stringextension)
 
 ---
 
@@ -248,6 +249,13 @@ Calculates and returns the width needed to fit the text into a height-constraine
 ``` Swift
 loremIpsum.width(forFixedHeight: 21, font: UIFont.systemFont(ofSize: 12, weight: UIFontWeightUltraLight))
 // => 2351.0390625
+```
+
+#### .hyphenated()
+A hyphenated NSAttributedString with justified alignment and word wrapping line break mode.
+
+``` Swift
+loremIpsum.hyphenated() // => a justified & hyphenated NSAttributedString object
 ```
 
 
