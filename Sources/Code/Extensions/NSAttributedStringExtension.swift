@@ -1,5 +1,5 @@
 //
-//  StringExtension.swift
+//  NSAttributedStringExtension.swift
 //  HandyUIKit
 //
 //  Created by Cihat Gündüz on 19.02.17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension String {
+extension NSAttributedString {
     /// Calculates and returns the height needed to fit the text into a width-constrained rect.
     ///
     /// - Parameters:
@@ -32,17 +32,8 @@ extension String {
     }
 
     private func rect(for constraintSize: CGSize, font: UIFont) -> CGRect {
-        let attributes = [NSFontAttributeName: font]
-        return (self as NSString).boundingRect(with: constraintSize, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
-    }
-
-    /// - Returns: A hyphenated NSAttributedString with justified alignment and word wrapping line break mode.
-    public func hyphenated() -> NSAttributedString {
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.hyphenationFactor = 1.0
-        paragraphStyle.alignment = .justified
-        paragraphStyle.lineBreakMode = .byWordWrapping
-
-        return NSAttributedString(string: self, attributes: [NSParagraphStyleAttributeName: paragraphStyle])
+        let copy = mutableCopy() as! NSMutableAttributedString
+        copy.addAttribute(NSFontAttributeName, value: font, range: NSMakeRange(0, length))
+        return copy.boundingRect(with: constraintSize, options: .usesLineFragmentOrigin, context: nil)
     }
 }
