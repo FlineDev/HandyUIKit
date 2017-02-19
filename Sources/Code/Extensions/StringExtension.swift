@@ -15,7 +15,7 @@ extension String {
     ///   - fixedWidth: The fixed width of the rect.
     ///   - font: The font of the text to calculate for.
     /// - Returns: The height needed to fit the text into a width-constrained rect.
-    public func height(for fixedWidth: CGFloat, font: UIFont) -> CGFloat {
+    public func height(forFixedWidth fixedWidth: CGFloat, font: UIFont) -> CGFloat {
         let constraintSize = CGSize(width: fixedWidth, height: .greatestFiniteMagnitude)
         return rect(for: constraintSize, font: font).height
     }
@@ -26,7 +26,7 @@ extension String {
     ///   - fixedHeight: The fixed height of the rect.
     ///   - font: The font of the text to calculate for.
     /// - Returns: The width needed to fit the text into a height-constrained rect.
-    public func width(for fixedHeight: CGFloat, font: UIFont) -> CGFloat {
+    public func width(forFixedHeight fixedHeight: CGFloat, font: UIFont) -> CGFloat {
         let constraintSize = CGSize(width: .greatestFiniteMagnitude, height: fixedHeight)
         return rect(for: constraintSize, font: font).width
     }
