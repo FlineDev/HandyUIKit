@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A11830F31E5996FD00CBE087 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11830F21E5996FD00CBE087 /* StringExtension.swift */; };
 		A11830F41E5996FD00CBE087 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11830F21E5996FD00CBE087 /* StringExtension.swift */; };
+		A11830F61E599BF600CBE087 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11830F51E599BF600CBE087 /* StringExtensionTests.swift */; };
+		A11830F71E599BF600CBE087 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11830F51E599BF600CBE087 /* StringExtensionTests.swift */; };
 		A14E0AC61E1F986A00DFC788 /* HandyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E0ABC1E1F986A00DFC788 /* HandyUIKit.framework */; };
 		A14E0AE41E1F987C00DFC788 /* HandyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E0ADB1E1F987C00DFC788 /* HandyUIKit.framework */; };
 		A14E0B111E1F9B3100DFC788 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */; };
@@ -44,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		A11830F21E5996FD00CBE087 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A11830F51E599BF600CBE087 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		A14E0ABC1E1F986A00DFC788 /* HandyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E0AC51E1F986A00DFC788 /* HandyUIKit-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandyUIKit-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E0ADB1E1F987C00DFC788 /* HandyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +161,7 @@
 			children = (
 				A1F2216D1E3E0B7700419B06 /* CoreExtensionTests.swift */,
 				A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift */,
+				A11830F51E599BF600CBE087 /* StringExtensionTests.swift */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -430,6 +434,7 @@
 			files = (
 				A1F2217C1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift in Sources */,
 				A1F221701E3E0B8400419B06 /* CoreExtensionTests.swift in Sources */,
+				A11830F61E599BF600CBE087 /* StringExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +456,7 @@
 			files = (
 				A1F2217D1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift in Sources */,
 				A1F221711E3E0B8500419B06 /* CoreExtensionTests.swift in Sources */,
+				A11830F71E599BF600CBE087 /* StringExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
