@@ -233,7 +233,7 @@ let originZeroRect2 = CGRect(width: 100, height: 50)
 
 
 ### StringExtension
-#### .width(for fixedHeight:font:)
+#### .height(forFixedWidth:font:)
 Calculates and returns the height needed to fit the text into a width-constrained rect.
 
 ``` Swift
@@ -243,7 +243,7 @@ loremIpsum.height(forFixedWidth: 300, font: UIFont.systemFont(ofSize: 14, weight
 // => 183.77734375
 ```
 
-#### .height(for fixedWidth:font:)
+#### .width(forFixedHeight:font:)
 Calculates and returns the width needed to fit the text into a height-constrained rect.
 
 ``` Swift
