@@ -13,15 +13,14 @@ import UIKit
 // MARK: - Constants
 private let RAD_TO_DEG = 180 / CGFloat.pi
 
-private let LAB_E: CGFloat = 0.008_856
-private let LAB_16_116: CGFloat = 0.137_931_0
-private let LAB_K_116: CGFloat = 7.787_036
-private let LAB_X: CGFloat = 0.950_47
+private let LAB_E: CGFloat = 0.008856
+private let LAB_16_116: CGFloat = 0.1379310
+private let LAB_K_116: CGFloat = 7.787036
+private let LAB_X: CGFloat = 0.95047
 private let LAB_Y: CGFloat = 1
 private let LAB_Z: CGFloat = 1.088_83
 
 // MARK: - RGB
-
 struct RGBColor {
     let r: CGFloat     // 0..1
     let g: CGFloat     // 0..1

@@ -16,8 +16,8 @@ alt="codebeat badge">
 <img src="https://img.shields.io/badge/Version-1.4.0-blue.svg"
 alt="Version: 1.4.0">
 </a>
-<img src="https://img.shields.io/badge/Swift-3.0-FFAC45.svg"
-alt="Swift: 3.0">
+<img src="https://img.shields.io/badge/Swift-4.0-FFAC45.svg"
+alt="Swift: 4.0">
 <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-FF69B4.svg"
 alt="Platforms: iOS | tvOS">
 <a href="https://github.com/Flinesoft/HandyUIKit/blob/stable/LICENSE.md">

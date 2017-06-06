@@ -33,7 +33,7 @@ extension NSAttributedString {
 
     private func rect(for constraintSize: CGSize, font: UIFont) -> CGRect {
         let copy = mutableCopy() as! NSMutableAttributedString // swiftlint:disable:this force_cast
-        copy.addAttribute(NSFontAttributeName, value: font, range: NSRange(location: 0, length: length))
+        copy.addAttribute(NSAttributedStringKey.font, value: font, range: NSRange(location: 0, length: length))
 
         return copy.boundingRect(with: constraintSize, options: .usesLineFragmentOrigin, context: nil)
     }

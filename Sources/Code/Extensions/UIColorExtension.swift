@@ -44,18 +44,18 @@ extension UIColor {
 
     /// The HSB & alpha attributes of the `UIColor` instance.
     public var hsba: (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat) { // swiftlint:disable:this large_tuple
-        var hsba: (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat) = (0, 0, 0, 0)
-        getHue(&(hsba.hue), saturation: &(hsba.saturation), brightness: &(hsba.brightness), alpha: &(hsba.alpha))
+        var hue: CGFloat = 0, saturation: CGFloat = 0, brightness: CGFloat = 0, alpha: CGFloat = 0
+        getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
 
-        return hsba
+        return (hue: hue, saturation: saturation, brightness: brightness, alpha: alpha)
     }
 
     /// The RGB & alpha attributes of the `UIColor` instance.
     public var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) { // swiftlint:disable:this large_tuple
-        var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) = (0, 0, 0, 0)
-        getRed(&rgba.red, green: &rgba.green, blue: &rgba.blue, alpha: &rgba.alpha)
+        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
 
-        return rgba
+        return (red: red, green: green, blue: blue, alpha: alpha)
     }
 
     // MARK: - Methods
@@ -108,64 +108,76 @@ extension UIColor {
     public func change(_ attribute: ChangeableAttribute, to newValue: CGFloat) -> UIColor { // swiftlint:disable:this cyclomatic_complexity
         switch attribute {
         case .red, .green, .blue:
-            var newRgba = rgba
-
-            switch attribute {
-            case .red:
-                newRgba.red = newValue
-
-            case .green:
-                newRgba.green = newValue
-
-            case .blue:
-                newRgba.blue = newValue
-
-            default:
-                break
-            }
-
-            return UIColor(red: newRgba.red, green: newRgba.green, blue: newRgba.blue, alpha: newRgba.alpha)
+            return newRgbaColor(attribute, newValue)
 
         case .hueHSB, .saturation, .brightness:
-            var newHsba = hsba
-
-            switch attribute {
-            case .hueHSB:
-                newHsba.hue = newValue
-
-            case .saturation:
-                newHsba.saturation = newValue
-
-            case .brightness:
-                newHsba.brightness = newValue
-
-            default:
-                break
-            }
-
-            return UIColor(hue: newHsba.hue, saturation: newHsba.saturation, brightness: newHsba.brightness, alpha: newHsba.alpha)
+            return newHsbaColor(attribute, newValue)
 
         case .hueHLC, .luminance, .chroma, .alpha:
-            var newHlca = hlca
-
-            switch attribute {
-            case .hueHLC:
-                newHlca.hue = newValue
-
-            case .luminance:
-                newHlca.luminance = newValue
-
-            case .chroma:
-                newHlca.chroma = newValue
-
-            case .alpha:
-                newHlca.alpha = newValue
-
-            default:
-                break
-            }
-
-            return UIColor(hue: newHlca.hue, luminance: newHlca.luminance, chroma: newHlca.chroma, alpha: newHlca.alpha)
+            return newHlcaColor(attribute, newValue)
         }
+    }
+
+    private func newHlcaColor(_ attribute: UIColor.ChangeableAttribute, _ newValue: CGFloat) -> UIColor {
+        var newHlca = hlca
+
+        switch attribute {
+        case .hueHLC:
+            newHlca.hue = newValue
+
+        case .luminance:
+            newHlca.luminance = newValue
+
+        case .chroma:
+            newHlca.chroma = newValue
+
+        case .alpha:
+            newHlca.alpha = newValue
+
+        default:
+            break
+        }
+
+        return UIColor(hue: newHlca.hue, luminance: newHlca.luminance, chroma: newHlca.chroma, alpha: newHlca.alpha)
+    }
+
+    private func newHsbaColor(_ attribute: UIColor.ChangeableAttribute, _ newValue: CGFloat) -> UIColor {
+        var newHsba = hsba
+
+        switch attribute {
+        case .hueHSB:
+            newHsba.hue = newValue
+
+        case .saturation:
+            newHsba.saturation = newValue
+
+        case .brightness:
+            newHsba.brightness = newValue
+
+        default:
+            break
+        }
+
+        return UIColor(hue: newHsba.hue, saturation: newHsba.saturation, brightness: newHsba.brightness, alpha: newHsba.alpha)
+    }
+
+    private func newRgbaColor(_ attribute: UIColor.ChangeableAttribute, _ newValue: CGFloat) -> UIColor {
+        var newRgba = rgba
+
+        switch attribute {
+        case .red:
+            newRgba.red = newValue
+
+        case .green:
+            newRgba.green = newValue
+
+        case .blue:
+            newRgba.blue = newValue
+
+        default:
+            break
+        }
+
+        return UIColor(red: newRgba.red, green: newRgba.green, blue: newRgba.blue, alpha: newRgba.alpha)
     }
 }
