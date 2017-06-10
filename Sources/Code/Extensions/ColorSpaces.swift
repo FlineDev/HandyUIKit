@@ -8,20 +8,17 @@
 //  Original source: https://github.com/timrwood/ColorSpaces
 //
 
-// swiftlint:disable
-
 import UIKit
 
 // MARK: - Constants
+private let RAD_TO_DEG = 180 / CGFloat.pi
 
-private let RAD_TO_DEG = 180 / CGFloat(M_PI)
-
-private let LAB_E: CGFloat = 0.008856
-private let LAB_16_116: CGFloat = 0.1379310
-private let LAB_K_116: CGFloat = 7.787036
-private let LAB_X: CGFloat = 0.95047
+private let LAB_E: CGFloat = 0.008_856
+private let LAB_16_116: CGFloat = 0.137_931_0
+private let LAB_K_116: CGFloat = 7.787_036
+private let LAB_X: CGFloat = 0.950_47
 private let LAB_Y: CGFloat = 1
-private let LAB_Z: CGFloat = 1.08883
+private let LAB_Z: CGFloat = 1.088_83
 
 // MARK: - RGB
 
@@ -40,7 +37,7 @@ struct RGBColor {
 
     fileprivate func sRGBCompand(_ v: CGFloat) -> CGFloat {
         let absV = abs(v)
-        let out = absV > 0.04045 ? pow((absV + 0.055) / 1.055, 2.4) : absV / 12.92
+        let out = absV > 0.040_45 ? pow((absV + 0.055) / 1.055, 2.4) : absV / 12.92
         return v > 0 ? out : -out
     }
 
@@ -48,9 +45,9 @@ struct RGBColor {
         let R = sRGBCompand(r)
         let G = sRGBCompand(g)
         let B = sRGBCompand(b)
-        let x: CGFloat = (R * 0.4124564) + (G * 0.3575761) + (B * 0.1804375)
-        let y: CGFloat = (R * 0.2126729) + (G * 0.7151522) + (B * 0.0721750)
-        let z: CGFloat = (R * 0.0193339) + (G * 0.1191920) + (B * 0.9503041)
+        let x: CGFloat = (R * 0.412_456_4) + (G * 0.357_576_1) + (B * 0.180_437_5)
+        let y: CGFloat = (R * 0.212_672_9) + (G * 0.715_152_2) + (B * 0.072_175_0)
+        let z: CGFloat = (R * 0.019_333_9) + (G * 0.119_192_0) + (B * 0.950_304_1)
         return XYZColor(x: x, y: y, z: z, alpha: alpha)
     }
 
@@ -99,14 +96,14 @@ struct XYZColor {
 
     fileprivate func sRGBCompand(_ v: CGFloat) -> CGFloat {
         let absV = abs(v)
-        let out = absV > 0.0031308 ? 1.055 * pow(absV, 1 / 2.4) - 0.055 : absV * 12.92
+        let out = absV > 0.003_130_8 ? 1.055 * pow(absV, 1 / 2.4) - 0.055 : absV * 12.92
         return v > 0 ? out : -out
     }
 
     func toRGB() -> RGBColor {
-        let r = (x *  3.2404542) + (y * -1.5371385) + (z * -0.4985314)
-        let g = (x * -0.9692660) + (y *  1.8760108) + (z *  0.0415560)
-        let b = (x *  0.0556434) + (y * -0.2040259) + (z *  1.0572252)
+        let r = (x * 3.240_454_2) + (y * -1.537_138_5) + (z * -0.498_531_4)
+        let g = (x * -0.969_266_0) + (y * 1.876_010_8) + (z * 0.041_556_0)
+        let b = (x * 0.055_643_4) + (y * -0.204_025_9) + (z * 1.057_225_2)
         let R = sRGBCompand(r)
         let G = sRGBCompand(g)
         let B = sRGBCompand(b)

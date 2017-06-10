@@ -9,7 +9,6 @@
 import UIKit
 
 // MARK: - CGSize Extension
-
 extension CGSize {
     /// Returns a new CGSize object with the width and height converted to true pixels on the main screen.
     public var inPixels: CGSize { return inPixels(.main) }
@@ -23,9 +22,7 @@ extension CGSize {
     }
 }
 
-
 // MARK: - CGPoint Extension
-
 extension CGPoint {
     /// Returns a new CGPoint object with the x and y converted to true pixels on the main screen.
     public var inPixels: CGPoint { return inPixels(.main) }
@@ -39,9 +36,7 @@ extension CGPoint {
     }
 }
 
-
 // MARK: - CGRect Extension
-
 extension CGRect {
     /// Creates a new CGRect object from origin zero with given size.
     ///

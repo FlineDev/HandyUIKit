@@ -29,10 +29,13 @@ extension UIView {
         guard let superview = superview else {
             preconditionFailure("`superview` was nil – call `addSubview(view: UIView)` before calling `bindEdgesToSuperview()` to fix this.")
         }
+
         translatesAutoresizingMaskIntoConstraints = false
         ["H:|-0-[subview]-0-|", "V:|-0-[subview]-0-|"].forEach { visualFormat in
-            superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: visualFormat, options: .directionLeadingToTrailing,
-                                                                    metrics: nil, views: ["subview": self]))
+            superview.addConstraints(NSLayoutConstraint.constraints(
+                withVisualFormat: visualFormat, options: .directionLeadingToTrailing,
+                metrics: nil, views: ["subview": self])
+            )
         }
     }
 }
