@@ -24,6 +24,6 @@ class StringExtensionTests: XCTestCase {
         let font = UIFont(name: "Helvetica Neue", size: 16)!
         let calculatedHeight = loremIpsum.width(forFixedHeight: 21, font: font)
 
-        XCTAssertEqualWithAccuracy(calculatedHeight, 3014.592, accuracy: 0.001)
+        XCTAssertEqualWithAccuracy(calculatedHeight, 3_014.592, accuracy: 0.001)
     }
 }
