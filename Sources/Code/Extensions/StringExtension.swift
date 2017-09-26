@@ -32,7 +32,7 @@ extension String {
     }
 
     private func rect(for constraintSize: CGSize, font: UIFont) -> CGRect {
-        let attributes = [NSFontAttributeName: font]
+        let attributes = [NSAttributedStringKey.font: font]
         return (self as NSString).boundingRect(with: constraintSize, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
     }
 
@@ -43,6 +43,6 @@ extension String {
         paragraphStyle.alignment = .justified
         paragraphStyle.lineBreakMode = .byWordWrapping
 
-        return NSAttributedString(string: self, attributes: [NSParagraphStyleAttributeName: paragraphStyle])
+        return NSAttributedString(string: self, attributes: [NSAttributedStringKey.paragraphStyle: paragraphStyle])
     }
 }
