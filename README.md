@@ -260,6 +260,25 @@ A hyphenated NSAttributedString with justified alignment and word wrapping line 
 loremIpsum.hyphenated() // => a justified & hyphenated NSAttributedString object
 ```
 
+#### .superscripted(font:) / .subscripted(font:) / .superAndSubscripted(font:)
+Superscript and/or subscript part of your strings with the structures `^{superscripted text}` and `_{subscripted text}`.
+
+``` Swift
+"x^{2}".superscripted(font: UIFont.systemFont(ofSize: 20, weight: .medium))
+```
+Result: x<sup>2</sup>
+
+``` Swift
+"CO_{2}".subscripted(font: UIFont.systemFont(ofSize: 20, weight: .medium))
+```
+Result: CO<sub>2</sub>
+
+``` Swift
+"_{20}Ca^{1,0}".superAndSubscripted(font: UIFont.systemFont(ofSize: 20, weight: .regular))
+```
+Result: <sub>20</sub>Ca<sup>1,0</sup>
+
+
 
 ## Contributing
 
