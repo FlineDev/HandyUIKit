@@ -115,14 +115,23 @@ let originZeroRect2 = CGRect(width: 100, height: 50)
 
 let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-loremIpsum.height(forFixedWidth: 300, font: UIFont.systemFont(ofSize: 14, weight: UIFontWeightBold))
+loremIpsum.height(forFixedWidth: 300, font: UIFont.systemFont(ofSize: 14, weight: .bold))
 
 //: ### .height(for fixedWidth:font:)
 //: Calculates and returns the width needed to fit the text into a height-constrained rect.
 
-loremIpsum.width(forFixedHeight: 21, font: UIFont.systemFont(ofSize: 12, weight: UIFontWeightUltraLight))
+loremIpsum.width(forFixedHeight: 21, font: UIFont.systemFont(ofSize: 12, weight: .ultraLight))
 
 //: ### .hyphenated()
 //: A hyphenated NSAttributedString with justified alignment and word wrapping line break mode.
 
 loremIpsum.hyphenated()
+
+//: ### .superscripted(font:) / .subscripted(font:) / .superAndSubscripted(font:)
+//: Superscript and/or subscript part of your strings with the structures `^{superscripted text}` and `_{subscripted text}`.
+
+"x^{2}".superscripted(font: UIFont.systemFont(ofSize: 20, weight: .medium))
+
+"CO_{2}".subscripted(font: UIFont.systemFont(ofSize: 20, weight: .medium))
+
+"_{20}Ca^{1,0}".superAndSubscripted(font: UIFont.systemFont(ofSize: 20, weight: .regular))

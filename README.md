@@ -13,8 +13,8 @@ alt="Build Status">
 alt="codebeat badge">
 </a>
 <a href="https://github.com/Flinesoft/HandyUIKit/releases">
-<img src="https://img.shields.io/badge/Version-1.5.0-blue.svg"
-alt="Version: 1.5.0">
+<img src="https://img.shields.io/badge/Version-1.6.0-blue.svg"
+alt="Version: 1.6.0">
 </a>
 <img src="https://img.shields.io/badge/Swift-4.0-FFAC45.svg"
 alt="Swift: 4.0">
@@ -55,7 +55,7 @@ You can of course also just include this framework manually into your project by
 Place the following line to your Cartfile:
 
 ``` Swift
-github "Flinesoft/HandyUIKit" ~> 1.5
+github "Flinesoft/HandyUIKit" ~> 1.6
 ```
 
 Now run `carthage update`. Then drag & drop the HandyUIKit.framework in the Carthage/build folder to your project. Now you can `import HandyUIKit` in each class you want to use its features. Refer to the [Carthage README](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) for detailed / updated instructions.
@@ -70,7 +70,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'MyAppTarget' do
-  pod 'HandyUIKit', '~> 1.5'
+  pod 'HandyUIKit', '~> 1.6'
 end
 ```
 
@@ -259,6 +259,25 @@ A hyphenated NSAttributedString with justified alignment and word wrapping line 
 ``` Swift
 loremIpsum.hyphenated() // => a justified & hyphenated NSAttributedString object
 ```
+
+#### .superscripted(font:) / .subscripted(font:) / .superAndSubscripted(font:)
+Superscript and/or subscript part of your strings with the structures `^{superscripted text}` and `_{subscripted text}`.
+
+``` Swift
+"x^{2}".superscripted(font: UIFont.systemFont(ofSize: 20, weight: .medium))
+```
+Result: x<sup>2</sup>
+
+``` Swift
+"CO_{2}".subscripted(font: UIFont.systemFont(ofSize: 20, weight: .medium))
+```
+Result: CO<sub>2</sub>
+
+``` Swift
+"_{20}Ca^{1,0}".superAndSubscripted(font: UIFont.systemFont(ofSize: 20, weight: .regular))
+```
+Result: <sub>20</sub>Ca<sup>1,0</sup>
+
 
 
 ## Contributing
