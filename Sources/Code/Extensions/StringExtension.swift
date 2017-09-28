@@ -45,4 +45,34 @@ extension String {
 
         return NSAttributedString(string: self, attributes: [NSAttributedStringKey.paragraphStyle: paragraphStyle])
     }
+
+    /// Superscripts substrings of structure ^{substring} and subscripts substrings of structure _{substring}.
+    ///
+    /// - Parameters:
+    ///   - font: The base font size for the resulting attributed string.
+    ///
+    /// - Returns: The resulting attributed string with superscripted and subscripted substrings.
+    public func superAndSubscripted(font: UIFont) -> NSAttributedString {
+        return NSAttributedString(string: self).superAndSubscripted(font: font)
+    }
+
+    /// Superscripts substrings of structure ^{substring}.
+    ///
+    /// - Parameters:
+    ///   - font: The base font size for the resulting attributed string.
+    ///
+    /// - Returns: The resulting attributed string with superscripted substrings.
+    public func superscripted(font: UIFont) -> NSAttributedString {
+        return NSAttributedString(string: self).superscripted(font: font)
+    }
+
+    /// Subscripts substrings of structure _{substring}.
+    ///
+    /// - Parameters:
+    ///   - font: The base font size for the resulting attributed string.
+    ///
+    /// - Returns: The resulting attributed string with subscripted substrings.
+    public func subscripted(font: UIFont) -> NSAttributedString {
+        return NSAttributedString(string: self).subscripted(font: font)
+    }
 }
