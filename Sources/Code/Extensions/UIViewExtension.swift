@@ -38,4 +38,50 @@ extension UIView {
             )
         }
     }
+
+    /// Finds all superviews in the view hierarchy.
+    ///
+    /// - Returns: A list of all superview starting with the superview of this view if any.
+    public var superviews: [UIView] {
+        guard let superview = superview else { return [] }
+
+        var superviews: [UIView] = [superview]
+        while let nextLevelSuperview = superviews.last!.superview {
+            superviews.append(nextLevelSuperview)
+        }
+
+        return superviews
+    }
+
+    /// Finds the first superview of all superviews matching a predicate.
+    ///
+    /// - Parameters:
+    ///   - predicate: The predicate to match superviews against.
+    /// - Returns: The first matching superview or `nil`.
+    public func firstSuperview(where predicate: (UIView) -> Bool) -> UIView? {
+        var nextSuperview: UIView? = superview
+
+        while nextSuperview != nil {
+            guard !predicate(nextSuperview!) else { return nextSuperview }
+            nextSuperview = nextSuperview?.superview
+        }
+
+        return nil
+    }
+
+    /// Finds the firstResponder in this view hierarchy by traversing its subviews recursively.
+    ///
+    /// NOTE: Uses DFS (depth first search).
+    ///
+    /// - Returns: The firstResponder view in the subview hierarchy.
+    public var firstResponder: UIView? {
+        guard !isFirstResponder else { return self }
+
+        for subview in subviews {
+            guard let firstResponder = subview.firstResponder else { continue }
+            return firstResponder
+        }
+
+        return nil
+    }
 }
