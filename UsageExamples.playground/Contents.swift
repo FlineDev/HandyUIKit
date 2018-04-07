@@ -135,3 +135,12 @@ loremIpsum.hyphenated()
 "CO_{2}".subscripted(font: UIFont.systemFont(ofSize: 20, weight: .medium))
 
 "_{20}Ca^{1,0}".superAndSubscripted(font: UIFont.systemFont(ofSize: 20, weight: .regular))
+
+
+//: ## UIImageExtension
+//: ### .toGrayscale()
+//: Creates a grayscale version of the image.
+
+let image = UIImage(named: "matt-lamers-261639-unsplash.jpg")!
+let grayscaleImage = image.toGrayscale()
+

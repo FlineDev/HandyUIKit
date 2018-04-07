@@ -91,6 +91,7 @@ Open the Playground from within the `.xcworkspace` in order for it to work.
   - [UIView](#uiviewextension)
   - [CoreGraphics](#coregraphicsextensions)
   - [StringExtension](#stringextension)
+  - [UIImageExtension](#uiimageextension)
 
 ---
 
@@ -278,7 +279,14 @@ Result: CO<sub>2</sub>
 ```
 Result: <sub>20</sub>Ca<sup>1,0</sup>
 
+### UIImageExtension
+#### .toGrayscale()
+Creates a grayscale version of the image.
 
+``` Swift
+let image = UIImage(named: "someImage")!
+let grayscaleImage = image.toGrayscale()
+```
 
 ## Contributing
 
