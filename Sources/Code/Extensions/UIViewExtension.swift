@@ -9,6 +9,8 @@
 import UIKit
 
 extension UIView {
+#if IOS
+
     /// Animates view changes alongside keyboard animation using the same duration and animation curve.
     ///
     /// - Parameters:
@@ -32,6 +34,8 @@ extension UIView {
             completion: completion
         )
     }
+
+#endif
 
     /// Renders the current content of the view using its bounds to an image.
     /// 
