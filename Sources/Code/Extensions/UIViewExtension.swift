@@ -9,6 +9,30 @@
 import UIKit
 
 extension UIView {
+    /// Animates view changes alongside keyboard animation using the same duration and animation curve.
+    ///
+    /// - Parameters:
+    ///   - notification: The `Notification` object received from the NotificationCenter alongside the `.keyboardWillShow` notification.
+    ///   - animations: The changes to animate.
+    ///   - completion: Any work to be done after animations has completed.
+    static func animateAlongsideKeyboard(_ notification: Notification, animations: @escaping () -> Void, completion: ((Bool) -> Void)? = nil) {
+        guard let userInfo = notification.userInfo,
+                let durationNumber = userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber,
+                let curveNumber = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber,
+                let curve = UIViewAnimationCurve(rawValue: curveNumber.intValue) else {
+            animations()
+            return
+        }
+
+        UIView.animate(
+            withDuration: durationNumber.doubleValue,
+            delay: 0,
+            options: curve.toOptions(),
+            animations: animations,
+            completion: completion
+        )
+    }
+
     /// Renders the current content of the view using its bounds to an image.
     /// 
     /// - Parameters:
@@ -83,5 +107,11 @@ extension UIView {
         }
 
         return nil
+    }
+}
+
+extension UIViewAnimationCurve {
+    fileprivate func toOptions() -> UIViewAnimationOptions {
+        return UIViewAnimationOptions(rawValue: UInt(rawValue << 16))
     }
 }
