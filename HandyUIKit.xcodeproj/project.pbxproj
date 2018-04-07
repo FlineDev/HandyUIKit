@@ -641,6 +641,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = IOS;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKit;
 				PRODUCT_NAME = HandyUIKit;
 				SKIP_INSTALL = YES;
@@ -663,6 +664,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = IOS;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKit;
 				PRODUCT_NAME = HandyUIKit;
 				SKIP_INSTALL = YES;
