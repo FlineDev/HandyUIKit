@@ -13,11 +13,11 @@ alt="Build Status">
 alt="codebeat badge">
 </a>
 <a href="https://github.com/Flinesoft/HandyUIKit/releases">
-<img src="https://img.shields.io/badge/Version-1.6.0-blue.svg"
-alt="Version: 1.6.0">
+<img src="https://img.shields.io/badge/Version-1.7.0-blue.svg"
+alt="Version: 1.7.0">
 </a>
-<img src="https://img.shields.io/badge/Swift-4.0-FFAC45.svg"
-alt="Swift: 4.0">
+<img src="https://img.shields.io/badge/Swift-4.1-FFAC45.svg"
+alt="Swift: 4.1">
 <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-FF69B4.svg"
 alt="Platforms: iOS | tvOS">
 <a href="https://github.com/Flinesoft/HandyUIKit/blob/stable/LICENSE.md">
@@ -91,6 +91,7 @@ Open the Playground from within the `.xcworkspace` in order for it to work.
   - [UIView](#uiviewextension)
   - [CoreGraphics](#coregraphicsextensions)
   - [StringExtension](#stringextension)
+  - [UIImageExtension](#uiimageextension)
 
 ---
 
@@ -278,7 +279,14 @@ Result: CO<sub>2</sub>
 ```
 Result: <sub>20</sub>Ca<sup>1,0</sup>
 
+### UIImageExtension
+#### .toGrayscale()
+Creates a grayscale version of the image.
 
+``` Swift
+let image = UIImage(named: "someImage")!
+let grayscaleImage = image.toGrayscale()
+```
 
 ## Contributing
 

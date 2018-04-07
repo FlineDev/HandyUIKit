@@ -105,7 +105,7 @@ extension UIColor {
     ///   - attribute: The attribute to change.
     ///   - to: The new value to be set for the attribute.
     /// - Returns: The resulting new `UIColor` with the specified change applied.
-    public func change(_ attribute: ChangeableAttribute, to newValue: CGFloat) -> UIColor { // swiftlint:disable:this cyclomatic_complexity
+    public func change(_ attribute: ChangeableAttribute, to newValue: CGFloat) -> UIColor {
         switch attribute {
         case .red, .green, .blue:
             return newRgbaColor(attribute, newValue)
