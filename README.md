@@ -1,6 +1,6 @@
 <p align="center">
 <img src="https://github.com/Dschee/HandyUIKit/blob/stable/Logo.png?raw=true"
-width=600 height=167>
+width=600>
 </p>
 
 <p align="center">
