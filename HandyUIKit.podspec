@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HandyUIKit"
-  s.version      = "1.7.2"
+  s.version      = "1.7.3"
   s.summary      = "Handy UI features that should have been part of UIKit in the first place."
 
   s.description  = <<-DESC
