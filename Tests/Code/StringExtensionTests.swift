@@ -16,13 +16,13 @@ class StringExtensionTests: XCTestCase {
         let font = UIFont(name: "Helvetica Neue", size: 16)!
         let calculatedHeight = loremIpsum.height(forFixedWidth: 300, font: font)
 
-        XCTAssertEqual(calculatedHeight, 205.04, accuracy: 0.001)
+        XCTAssertEqual(calculatedHeight, 206, accuracy: 0.001)
     }
 
     func testWidth() {
         let font = UIFont(name: "Helvetica Neue", size: 16)!
         let calculatedHeight = loremIpsum.width(forFixedHeight: 21, font: font)
 
-        XCTAssertEqual(calculatedHeight, 3_014.592, accuracy: 0.001)
+        XCTAssertEqual(calculatedHeight, 3_015, accuracy: 0.001)
     }
 }
