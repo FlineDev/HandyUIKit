@@ -97,6 +97,15 @@ extension UIView {
         return nil
     }
 
+    /// Finds the subview in the view hierarchy matching the given predicate.
+    ///
+    /// NOTE: Uses DFS (depth first search).
+    ///
+    /// - Returns: The first subview in the viewhierarchy matching the given predicate or `nil` if not found.
+    public func firstSubviewInHierarchy(matching predicate: (UIView) -> Bool) -> UIView? {
+        return subviews.first(where: predicate) ?? subviews.first { $0.firstSubviewInHierarchy(matching: predicate) != nil }
+    }
+
     /// Finds the firstResponder in this view hierarchy by traversing its subviews recursively.
     ///
     /// NOTE: Uses DFS (depth first search).
