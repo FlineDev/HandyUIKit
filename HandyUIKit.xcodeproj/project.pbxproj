@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		2E1DABDE20790C1700627CC2 /* UIImageExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DABDD20790C1700627CC2 /* UIImageExtensionTests.swift */; };
 		2E1DABDF20790C1700627CC2 /* UIImageExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DABDD20790C1700627CC2 /* UIImageExtensionTests.swift */; };
-		2E1DABE520790F5900627CC2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DABE420790F5900627CC2 /* Media.xcassets */; };
-		2E1DABE620790F5900627CC2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DABE420790F5900627CC2 /* Media.xcassets */; };
+		2E1DABE520790F5900627CC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DABE420790F5900627CC2 /* Images.xcassets */; };
+		2E1DABE620790F5900627CC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DABE420790F5900627CC2 /* Images.xcassets */; };
 		2E71660A207904A200135F39 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E716609207904A200135F39 /* UIImageExtension.swift */; };
 		2E71660B207904A200135F39 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E716609207904A200135F39 /* UIImageExtension.swift */; };
 		A11830F31E5996FD00CBE087 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11830F21E5996FD00CBE087 /* StringExtension.swift */; };
@@ -54,7 +54,7 @@
 
 /* Begin PBXFileReference section */
 		2E1DABDD20790C1700627CC2 /* UIImageExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensionTests.swift; sourceTree = "<group>"; };
-		2E1DABE420790F5900627CC2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		2E1DABE420790F5900627CC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E716609207904A200135F39 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		A11830F21E5996FD00CBE087 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		A11830F51E599BF600CBE087 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
@@ -113,20 +113,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E1DABE020790DC300627CC2 /* Assets */ = {
+		2E1DABE020790DC300627CC2 /* Resoruces */ = {
 			isa = PBXGroup;
 			children = (
-				2E1DABE420790F5900627CC2 /* Media.xcassets */,
+				2E1DABE420790F5900627CC2 /* Images.xcassets */,
 			);
-			path = Assets;
+			path = Resoruces;
 			sourceTree = "<group>";
 		};
 		A14E0AB21E1F986A00DFC788 = {
 			isa = PBXGroup;
 			children = (
-				A1F221781E3E15E500419B06 /* Root Files */,
-				A14E0AF21E1F98E400DFC788 /* Sources */,
+				A14E0AF21E1F98E400DFC788 /* Framework */,
 				A14E0AF71E1F98E400DFC788 /* Tests */,
+				A1F221781E3E15E500419B06 /* RootFiles */,
 				A14E0ABD1E1F986A00DFC788 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,42 +142,43 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A14E0AF21E1F98E400DFC788 /* Sources */ = {
+		A14E0AF21E1F98E400DFC788 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				A14E0AF31E1F98E400DFC788 /* Code */,
-				A14E0AF51E1F98E400DFC788 /* Supporting Files */,
+				A14E0AF31E1F98E400DFC788 /* Sources */,
+				A14E0AF51E1F98E400DFC788 /* SupportingFiles */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		A14E0AF31E1F98E400DFC788 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2217F1E3E778F00419B06 /* ColorSpaces.swift */,
+				A14E0B0C1E1F9B3100DFC788 /* Extensions */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		A14E0AF31E1F98E400DFC788 /* Code */ = {
-			isa = PBXGroup;
-			children = (
-				A14E0B0C1E1F9B3100DFC788 /* Extensions */,
-			);
-			path = Code;
-			sourceTree = "<group>";
-		};
-		A14E0AF51E1F98E400DFC788 /* Supporting Files */ = {
+		A14E0AF51E1F98E400DFC788 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				A14E0AF61E1F98E400DFC788 /* Info.plist */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		A14E0AF71E1F98E400DFC788 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2E1DABE020790DC300627CC2 /* Assets */,
-				A14E0AF81E1F98E400DFC788 /* Code */,
+				2E1DABE020790DC300627CC2 /* Resoruces */,
+				A14E0AF81E1F98E400DFC788 /* Sources */,
 				A14E0AFA1E1F98E400DFC788 /* Supporting Files */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		A14E0AF81E1F98E400DFC788 /* Code */ = {
+		A14E0AF81E1F98E400DFC788 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				A1F2216D1E3E0B7700419B06 /* CoreExtensionTests.swift */,
@@ -185,7 +186,7 @@
 				A11830F51E599BF600CBE087 /* StringExtensionTests.swift */,
 				2E1DABDD20790C1700627CC2 /* UIImageExtensionTests.swift */,
 			);
-			path = Code;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		A14E0AFA1E1F98E400DFC788 /* Supporting Files */ = {
@@ -200,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				A1F2216A1E3E08AE00419B06 /* CoreGraphicsExtension.swift */,
-				A1F2217E1E3E777600419B06 /* Helpers */,
 				A1D4453B1E59C9370014A250 /* NSAttributedStringExtension.swift */,
 				A11830F21E5996FD00CBE087 /* StringExtension.swift */,
 				A1F221671E3E07DD00419B06 /* UIColorExtension.swift */,
@@ -210,7 +210,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A1F221781E3E15E500419B06 /* Root Files */ = {
+		A1F221781E3E15E500419B06 /* RootFiles */ = {
 			isa = PBXGroup;
 			children = (
 				A1F221791E3E15FA00419B06 /* README.md */,
@@ -220,15 +220,7 @@
 				A1F221821E3FEDD600419B06 /* .swiftlint.yml */,
 				A1F221881E3FEEA700419B06 /* .swift-version */,
 			);
-			name = "Root Files";
-			sourceTree = "<group>";
-		};
-		A1F2217E1E3E777600419B06 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				A1F2217F1E3E778F00419B06 /* ColorSpaces.swift */,
-			);
-			name = Helpers;
+			name = RootFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,7 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E1DABE520790F5900627CC2 /* Media.xcassets in Resources */,
+				2E1DABE520790F5900627CC2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E1DABE620790F5900627CC2 /* Media.xcassets in Resources */,
+				2E1DABE620790F5900627CC2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,7 +629,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Framework/SupportingFiles/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -660,7 +652,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Framework/SupportingFiles/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -677,7 +669,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 767S6EFMJ8;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -690,7 +682,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 767S6EFMJ8;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -708,7 +700,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Framework/SupportingFiles/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKit;
@@ -732,7 +724,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Framework/SupportingFiles/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKit;
@@ -750,7 +742,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 767S6EFMJ8;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flinesoft.HandyUIKit-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -765,7 +757,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 767S6EFMJ8;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flinesoft.HandyUIKit-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
