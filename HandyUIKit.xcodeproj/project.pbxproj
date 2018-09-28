@@ -173,7 +173,7 @@
 			children = (
 				2E1DABE020790DC300627CC2 /* Resoruces */,
 				A14E0AF81E1F98E400DFC788 /* Sources */,
-				A14E0AFA1E1F98E400DFC788 /* Supporting Files */,
+				A14E0AFA1E1F98E400DFC788 /* SupportingFiles */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -189,12 +189,12 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		A14E0AFA1E1F98E400DFC788 /* Supporting Files */ = {
+		A14E0AFA1E1F98E400DFC788 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				A14E0AFB1E1F98E400DFC788 /* Info.plist */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		A14E0B0C1E1F9B3100DFC788 /* Extensions */ = {
