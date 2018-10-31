@@ -92,6 +92,7 @@ Open the Playground from within the `.xcworkspace` in order for it to work.
   - [CoreGraphics](#coregraphicsextensions)
   - [StringExtension](#stringextension)
   - [UIImageExtension](#uiimageextension)
+  - [UITableViewExtension](#uitableviewextension)
 
 ---
 
@@ -286,6 +287,35 @@ Creates a grayscale version of the image.
 ``` Swift
 let image = UIImage(named: "someImage")!
 let grayscaleImage = image.toGrayscale()
+```
+
+### UITableViewExtension
+#### dequeueCell(ofType:, for:)
+Returns a reusable table view cell of type `cellType` with the name of its type as reuse identifier and adds it to the table.
+
+```swift
+let cell = tableView.dequeueCell(ofType: MyUITableViewCell.self, for: indexPath)
+```
+
+#### dequeueHeaderFooterView(ofType:)
+Returns a reusable header or footer view of type `viewType` with the name of its type as reuse identifier and adds it to the table.
+
+```swift
+let view = tableView.dequeueHeaderFooterView(ofType: MyUITableHeaderFooterView.self)
+```
+
+#### registerCell(ofType:)
+Registers a nib with the name of `cellType` if it exists or registers the class of type `cellType` as reusable cell.
+
+```swift
+tableView.registerCell(ofType: MyUITableViewCell.self)
+```
+
+#### registerHeaderFooterView(ofType:)
+Registers a nib with the name of `viewType` if it exists or registers the class of type `viewType` as reusable header footer view.
+
+```swift
+tableView.registerHeaderFooterView(ofType: MyUITableHeaderFooterView.self)
 ```
 
 ## Contributing

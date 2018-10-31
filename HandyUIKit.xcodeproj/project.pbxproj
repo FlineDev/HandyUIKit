@@ -33,6 +33,8 @@
 		A1F2217D1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift */; };
 		A1F221801E3E778F00419B06 /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2217F1E3E778F00419B06 /* ColorSpaces.swift */; };
 		A1F221811E3E778F00419B06 /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2217F1E3E778F00419B06 /* ColorSpaces.swift */; };
+		C5C8A2482181F7BE00D12F8E /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C8A2472181F7BE00D12F8E /* UITableViewExtension.swift */; };
+		C5C8A2492181F7BE00D12F8E /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C8A2472181F7BE00D12F8E /* UITableViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,7 @@
 		A1F221841E3FEE1C00419B06 /* HandyUIKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HandyUIKit.podspec; sourceTree = "<group>"; };
 		A1F221861E3FEE8B00419B06 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		A1F221881E3FEEA700419B06 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		C5C8A2472181F7BE00D12F8E /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,7 @@
 				A1F221671E3E07DD00419B06 /* UIColorExtension.swift */,
 				2E716609207904A200135F39 /* UIImageExtension.swift */,
 				A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */,
+				C5C8A2472181F7BE00D12F8E /* UITableViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -443,6 +447,7 @@
 				A1F221801E3E778F00419B06 /* ColorSpaces.swift in Sources */,
 				A1F221681E3E07DD00419B06 /* UIColorExtension.swift in Sources */,
 				2E71660A207904A200135F39 /* UIImageExtension.swift in Sources */,
+				C5C8A2482181F7BE00D12F8E /* UITableViewExtension.swift in Sources */,
 				A11830F31E5996FD00CBE087 /* StringExtension.swift in Sources */,
 				A1D4453C1E59C9370014A250 /* NSAttributedStringExtension.swift in Sources */,
 				A1F2216B1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */,
@@ -468,6 +473,7 @@
 				A1F221811E3E778F00419B06 /* ColorSpaces.swift in Sources */,
 				A1F221691E3E07DD00419B06 /* UIColorExtension.swift in Sources */,
 				2E71660B207904A200135F39 /* UIImageExtension.swift in Sources */,
+				C5C8A2492181F7BE00D12F8E /* UITableViewExtension.swift in Sources */,
 				A11830F41E5996FD00CBE087 /* StringExtension.swift in Sources */,
 				A1D4453D1E59C9370014A250 /* NSAttributedStringExtension.swift in Sources */,
 				A1F2216C1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */,
