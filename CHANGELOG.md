@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 - UITableViewExtension to dequeue cells, headers & footers with static typing.
   via [#10](https://github.com/Flinesoft/HandyUIKit/pull/10) by [Murat Yilmaz](https://github.com/roccx)
 ### Changed
-- None.
+- Updated code to Swift 4.2 & Xcode 10.
 ### Deprecated
 - None.
 ### Removed
