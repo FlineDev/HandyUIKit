@@ -1,14 +1,15 @@
 //
-//  ColorSpaces.swift
-//  ColorSpaces
-//
 //  Created by Tim Wood on 10/9/15.
-//  Copyright © 2015 Tim Wood. All rights reserved.
+//  Copyright © 2018 Flinesoft. All rights reserved.
 //
 //  Original source: https://github.com/timrwood/ColorSpaces
 //
 
+// swiftlint:disable all
+
 import UIKit
+
+private struct ColorSpaces {}
 
 // MARK: - Constants
 private let RAD_TO_DEG = 180 / CGFloat.pi

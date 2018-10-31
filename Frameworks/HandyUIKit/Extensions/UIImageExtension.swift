@@ -1,7 +1,4 @@
 //
-//  UIImageExtension.swift
-//  HandyUIKit
-//
 //  Created by Cihat Gündüz on 07.04.18.
 //  Copyright © 2018 Flinesoft. All rights reserved.
 //
@@ -13,13 +10,13 @@ extension UIImage {
     ///
     /// - Returns: The grayscale image.
     public func toGrayscale() -> UIImage? {
-        let imageRect = CGRect(size: size)
+        let imageRect = CGRect(x: 0, y: 0, width: size.width * scale, height: size.height * scale)
         let colorSpace = CGColorSpaceCreateDeviceGray()
         let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.none.rawValue)
         let contextOptional = CGContext(
             data: nil,
-            width: Int(size.width),
-            height: Int(size.height),
+            width: Int(size.width * scale),
+            height: Int(size.height * scale),
             bitsPerComponent: 8,
             bytesPerRow: 0,
             space: colorSpace,

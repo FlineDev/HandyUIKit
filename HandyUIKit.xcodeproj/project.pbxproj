@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		2E1DABDE20790C1700627CC2 /* UIImageExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DABDD20790C1700627CC2 /* UIImageExtensionTests.swift */; };
 		2E1DABDF20790C1700627CC2 /* UIImageExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DABDD20790C1700627CC2 /* UIImageExtensionTests.swift */; };
-		2E1DABE520790F5900627CC2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DABE420790F5900627CC2 /* Media.xcassets */; };
-		2E1DABE620790F5900627CC2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DABE420790F5900627CC2 /* Media.xcassets */; };
+		2E1DABE520790F5900627CC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DABE420790F5900627CC2 /* Images.xcassets */; };
+		2E1DABE620790F5900627CC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DABE420790F5900627CC2 /* Images.xcassets */; };
 		2E71660A207904A200135F39 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E716609207904A200135F39 /* UIImageExtension.swift */; };
 		2E71660B207904A200135F39 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E716609207904A200135F39 /* UIImageExtension.swift */; };
+		8242F0A42189FE230075FDF3 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242F0A32189FE230075FDF3 /* CGSizeExtension.swift */; };
+		8242F0A52189FE230075FDF3 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242F0A32189FE230075FDF3 /* CGSizeExtension.swift */; };
+		8242F0A72189FE410075FDF3 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242F0A62189FE410075FDF3 /* CGPointExtension.swift */; };
+		8242F0A82189FE410075FDF3 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242F0A62189FE410075FDF3 /* CGPointExtension.swift */; };
+		8242F0AA2189FE500075FDF3 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242F0A92189FE500075FDF3 /* CGRectExtension.swift */; };
+		8242F0AB2189FE500075FDF3 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242F0A92189FE500075FDF3 /* CGRectExtension.swift */; };
 		A11830F31E5996FD00CBE087 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11830F21E5996FD00CBE087 /* StringExtension.swift */; };
 		A11830F41E5996FD00CBE087 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11830F21E5996FD00CBE087 /* StringExtension.swift */; };
 		A11830F61E599BF600CBE087 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11830F51E599BF600CBE087 /* StringExtensionTests.swift */; };
@@ -25,14 +31,14 @@
 		A1D4453D1E59C9370014A250 /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4453B1E59C9370014A250 /* NSAttributedStringExtension.swift */; };
 		A1F221681E3E07DD00419B06 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F221671E3E07DD00419B06 /* UIColorExtension.swift */; };
 		A1F221691E3E07DD00419B06 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F221671E3E07DD00419B06 /* UIColorExtension.swift */; };
-		A1F2216B1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2216A1E3E08AE00419B06 /* CoreGraphicsExtension.swift */; };
-		A1F2216C1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2216A1E3E08AE00419B06 /* CoreGraphicsExtension.swift */; };
-		A1F221701E3E0B8400419B06 /* CoreExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2216D1E3E0B7700419B06 /* CoreExtensionTests.swift */; };
-		A1F221711E3E0B8500419B06 /* CoreExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2216D1E3E0B7700419B06 /* CoreExtensionTests.swift */; };
-		A1F2217C1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift */; };
-		A1F2217D1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift */; };
+		A1F221701E3E0B8400419B06 /* ColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2216D1E3E0B7700419B06 /* ColorExtensionTests.swift */; };
+		A1F221711E3E0B8500419B06 /* ColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2216D1E3E0B7700419B06 /* ColorExtensionTests.swift */; };
+		A1F2217C1E3E2C5500419B06 /* CoreGraphicsExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionsTests.swift */; };
+		A1F2217D1E3E2C5500419B06 /* CoreGraphicsExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionsTests.swift */; };
 		A1F221801E3E778F00419B06 /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2217F1E3E778F00419B06 /* ColorSpaces.swift */; };
 		A1F221811E3E778F00419B06 /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2217F1E3E778F00419B06 /* ColorSpaces.swift */; };
+		C5C8A2482181F7BE00D12F8E /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C8A2472181F7BE00D12F8E /* UITableViewExtension.swift */; };
+		C5C8A2492181F7BE00D12F8E /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C8A2472181F7BE00D12F8E /* UITableViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,29 +60,35 @@
 
 /* Begin PBXFileReference section */
 		2E1DABDD20790C1700627CC2 /* UIImageExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensionTests.swift; sourceTree = "<group>"; };
-		2E1DABE420790F5900627CC2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		2E1DABE420790F5900627CC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E716609207904A200135F39 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		8242F09C2189F59F0075FDF3 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		8242F09D2189F6FD0075FDF3 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		8242F09F2189F7190075FDF3 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		8242F0A02189F8950075FDF3 /* .projlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .projlint.yml; sourceTree = "<group>"; };
+		8242F0A32189FE230075FDF3 /* CGSizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
+		8242F0A62189FE410075FDF3 /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
+		8242F0A92189FE500075FDF3 /* CGRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
 		A11830F21E5996FD00CBE087 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		A11830F51E599BF600CBE087 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		A14E0ABC1E1F986A00DFC788 /* HandyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A14E0AC51E1F986A00DFC788 /* HandyUIKit-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandyUIKit-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14E0AC51E1F986A00DFC788 /* HandyUIKit iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandyUIKit iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E0ADB1E1F987C00DFC788 /* HandyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A14E0AE31E1F987C00DFC788 /* HandyUIKit-tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandyUIKit-tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14E0AE31E1F987C00DFC788 /* HandyUIKit tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandyUIKit tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E0AF61E1F98E400DFC788 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14E0AFB1E1F98E400DFC788 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A1D4453B1E59C9370014A250 /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
 		A1F221671E3E07DD00419B06 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		A1F2216A1E3E08AE00419B06 /* CoreGraphicsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtension.swift; sourceTree = "<group>"; };
-		A1F2216D1E3E0B7700419B06 /* CoreExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreExtensionTests.swift; sourceTree = "<group>"; };
+		A1F2216D1E3E0B7700419B06 /* ColorExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensionTests.swift; sourceTree = "<group>"; };
 		A1F221791E3E15FA00419B06 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtensionTests.swift; sourceTree = "<group>"; };
+		A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtensionsTests.swift; sourceTree = "<group>"; };
 		A1F2217F1E3E778F00419B06 /* ColorSpaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSpaces.swift; sourceTree = "<group>"; };
 		A1F221821E3FEDD600419B06 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A1F221831E3FEDF300419B06 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		A1F221841E3FEE1C00419B06 /* HandyUIKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HandyUIKit.podspec; sourceTree = "<group>"; };
-		A1F221861E3FEE8B00419B06 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		A1F221881E3FEEA700419B06 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		A1F221861E3FEE8B00419B06 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C5C8A2472181F7BE00D12F8E /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,20 +125,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E1DABE020790DC300627CC2 /* Assets */ = {
+		2E1DABE020790DC300627CC2 /* Resoruces */ = {
 			isa = PBXGroup;
 			children = (
-				2E1DABE420790F5900627CC2 /* Media.xcassets */,
+				2E1DABE420790F5900627CC2 /* Images.xcassets */,
 			);
-			path = Assets;
+			path = Resoruces;
 			sourceTree = "<group>";
 		};
 		A14E0AB21E1F986A00DFC788 = {
 			isa = PBXGroup;
 			children = (
-				A1F221781E3E15E500419B06 /* Root Files */,
-				A14E0AF21E1F98E400DFC788 /* Sources */,
+				A14E0AF21E1F98E400DFC788 /* Frameworks */,
 				A14E0AF71E1F98E400DFC788 /* Tests */,
+				A1F221781E3E15E500419B06 /* RootFiles */,
 				A14E0ABD1E1F986A00DFC788 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,100 +147,98 @@
 			isa = PBXGroup;
 			children = (
 				A14E0ABC1E1F986A00DFC788 /* HandyUIKit.framework */,
-				A14E0AC51E1F986A00DFC788 /* HandyUIKit-iOS Tests.xctest */,
+				A14E0AC51E1F986A00DFC788 /* HandyUIKit iOS Tests.xctest */,
 				A14E0ADB1E1F987C00DFC788 /* HandyUIKit.framework */,
-				A14E0AE31E1F987C00DFC788 /* HandyUIKit-tvOS Tests.xctest */,
+				A14E0AE31E1F987C00DFC788 /* HandyUIKit tvOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A14E0AF21E1F98E400DFC788 /* Sources */ = {
+		A14E0AF21E1F98E400DFC788 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A14E0AF31E1F98E400DFC788 /* Code */,
-				A14E0AF51E1F98E400DFC788 /* Supporting Files */,
+				A14E0AF31E1F98E400DFC788 /* HandyUIKit */,
+				A14E0AF51E1F98E400DFC788 /* SupportingFiles */,
 			);
-			path = Sources;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
-		A14E0AF31E1F98E400DFC788 /* Code */ = {
+		A14E0AF31E1F98E400DFC788 /* HandyUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A1F2217F1E3E778F00419B06 /* ColorSpaces.swift */,
 				A14E0B0C1E1F9B3100DFC788 /* Extensions */,
 			);
-			path = Code;
+			path = HandyUIKit;
 			sourceTree = "<group>";
 		};
-		A14E0AF51E1F98E400DFC788 /* Supporting Files */ = {
+		A14E0AF51E1F98E400DFC788 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				A14E0AF61E1F98E400DFC788 /* Info.plist */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		A14E0AF71E1F98E400DFC788 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2E1DABE020790DC300627CC2 /* Assets */,
-				A14E0AF81E1F98E400DFC788 /* Code */,
-				A14E0AFA1E1F98E400DFC788 /* Supporting Files */,
+				A14E0AF81E1F98E400DFC788 /* HandyUIKitTests */,
+				A14E0AFA1E1F98E400DFC788 /* SupportingFiles */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		A14E0AF81E1F98E400DFC788 /* Code */ = {
+		A14E0AF81E1F98E400DFC788 /* HandyUIKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				A1F2216D1E3E0B7700419B06 /* CoreExtensionTests.swift */,
-				A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift */,
+				A1F2216D1E3E0B7700419B06 /* ColorExtensionTests.swift */,
+				A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionsTests.swift */,
 				A11830F51E599BF600CBE087 /* StringExtensionTests.swift */,
 				2E1DABDD20790C1700627CC2 /* UIImageExtensionTests.swift */,
+				2E1DABE020790DC300627CC2 /* Resoruces */,
 			);
-			path = Code;
+			path = HandyUIKitTests;
 			sourceTree = "<group>";
 		};
-		A14E0AFA1E1F98E400DFC788 /* Supporting Files */ = {
+		A14E0AFA1E1F98E400DFC788 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				A14E0AFB1E1F98E400DFC788 /* Info.plist */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		A14E0B0C1E1F9B3100DFC788 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A1F2216A1E3E08AE00419B06 /* CoreGraphicsExtension.swift */,
-				A1F2217E1E3E777600419B06 /* Helpers */,
+				8242F0A62189FE410075FDF3 /* CGPointExtension.swift */,
+				8242F0A92189FE500075FDF3 /* CGRectExtension.swift */,
+				8242F0A32189FE230075FDF3 /* CGSizeExtension.swift */,
 				A1D4453B1E59C9370014A250 /* NSAttributedStringExtension.swift */,
 				A11830F21E5996FD00CBE087 /* StringExtension.swift */,
 				A1F221671E3E07DD00419B06 /* UIColorExtension.swift */,
 				2E716609207904A200135F39 /* UIImageExtension.swift */,
+				C5C8A2472181F7BE00D12F8E /* UITableViewExtension.swift */,
 				A14E0B0E1E1F9B3100DFC788 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A1F221781E3E15E500419B06 /* Root Files */ = {
+		A1F221781E3E15E500419B06 /* RootFiles */ = {
 			isa = PBXGroup;
 			children = (
-				A1F221791E3E15FA00419B06 /* README.md */,
-				A1F221861E3FEE8B00419B06 /* LICENSE.md */,
-				A1F221831E3FEDF300419B06 /* Package.swift */,
-				A1F221841E3FEE1C00419B06 /* HandyUIKit.podspec */,
+				8242F0A02189F8950075FDF3 /* .projlint.yml */,
 				A1F221821E3FEDD600419B06 /* .swiftlint.yml */,
-				A1F221881E3FEEA700419B06 /* .swift-version */,
+				8242F09C2189F59F0075FDF3 /* CHANGELOG.md */,
+				8242F09D2189F6FD0075FDF3 /* CODE_OF_CONDUCT.md */,
+				8242F09F2189F7190075FDF3 /* CONTRIBUTING.md */,
+				A1F221841E3FEE1C00419B06 /* HandyUIKit.podspec */,
+				A1F221861E3FEE8B00419B06 /* LICENSE */,
+				A1F221831E3FEDF300419B06 /* Package.swift */,
+				A1F221791E3E15FA00419B06 /* README.md */,
 			);
-			name = "Root Files";
-			sourceTree = "<group>";
-		};
-		A1F2217E1E3E777600419B06 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				A1F2217F1E3E778F00419B06 /* ColorSpaces.swift */,
-			);
-			name = Helpers;
+			name = RootFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,28 +261,29 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A14E0ABB1E1F986A00DFC788 /* HandyUIKit-iOS */ = {
+		A14E0ABB1E1F986A00DFC788 /* HandyUIKit iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A14E0AD01E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-iOS" */;
+			buildConfigurationList = A14E0AD01E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit iOS" */;
 			buildPhases = (
 				A14E0AB71E1F986A00DFC788 /* Sources */,
 				A14E0AB81E1F986A00DFC788 /* Frameworks */,
 				A14E0AB91E1F986A00DFC788 /* Headers */,
 				A14E0ABA1E1F986A00DFC788 /* Resources */,
 				A1F2218C1E3FEF2800419B06 /* SwiftLint */,
+				8242F0A12189F8AD0075FDF3 /* ProjLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "HandyUIKit-iOS";
+			name = "HandyUIKit iOS";
 			productName = HandyUIKit;
 			productReference = A14E0ABC1E1F986A00DFC788 /* HandyUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A14E0AC41E1F986A00DFC788 /* HandyUIKit-iOS Tests */ = {
+		A14E0AC41E1F986A00DFC788 /* HandyUIKit iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A14E0AD31E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-iOS Tests" */;
+			buildConfigurationList = A14E0AD31E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit iOS Tests" */;
 			buildPhases = (
 				A14E0AC11E1F986A00DFC788 /* Sources */,
 				A14E0AC21E1F986A00DFC788 /* Frameworks */,
@@ -283,33 +294,34 @@
 			dependencies = (
 				A14E0AC81E1F986A00DFC788 /* PBXTargetDependency */,
 			);
-			name = "HandyUIKit-iOS Tests";
+			name = "HandyUIKit iOS Tests";
 			productName = HandyUIKitTests;
-			productReference = A14E0AC51E1F986A00DFC788 /* HandyUIKit-iOS Tests.xctest */;
+			productReference = A14E0AC51E1F986A00DFC788 /* HandyUIKit iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A14E0ADA1E1F987C00DFC788 /* HandyUIKit-tvOS */ = {
+		A14E0ADA1E1F987C00DFC788 /* HandyUIKit tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A14E0AEC1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-tvOS" */;
+			buildConfigurationList = A14E0AEC1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit tvOS" */;
 			buildPhases = (
 				A14E0AD61E1F987C00DFC788 /* Sources */,
 				A14E0AD71E1F987C00DFC788 /* Frameworks */,
 				A14E0AD81E1F987C00DFC788 /* Headers */,
 				A14E0AD91E1F987C00DFC788 /* Resources */,
 				A1F2218A1E3FEF1300419B06 /* SwiftLint */,
+				8242F0A22189F8B30075FDF3 /* ProjLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "HandyUIKit-tvOS";
+			name = "HandyUIKit tvOS";
 			productName = "HandyUIKit-tvOS";
 			productReference = A14E0ADB1E1F987C00DFC788 /* HandyUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A14E0AE21E1F987C00DFC788 /* HandyUIKit-tvOS Tests */ = {
+		A14E0AE21E1F987C00DFC788 /* HandyUIKit tvOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A14E0AEF1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-tvOS Tests" */;
+			buildConfigurationList = A14E0AEF1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit tvOS Tests" */;
 			buildPhases = (
 				A14E0ADF1E1F987C00DFC788 /* Sources */,
 				A14E0AE01E1F987C00DFC788 /* Frameworks */,
@@ -320,9 +332,9 @@
 			dependencies = (
 				A14E0AE61E1F987C00DFC788 /* PBXTargetDependency */,
 			);
-			name = "HandyUIKit-tvOS Tests";
+			name = "HandyUIKit tvOS Tests";
 			productName = "HandyUIKit-tvOSTests";
-			productReference = A14E0AE31E1F987C00DFC788 /* HandyUIKit-tvOS Tests.xctest */;
+			productReference = A14E0AE31E1F987C00DFC788 /* HandyUIKit tvOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -337,13 +349,13 @@
 				TargetAttributes = {
 					A14E0ABB1E1F986A00DFC788 = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 					};
 					A14E0AC41E1F986A00DFC788 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 767S6EFMJ8;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 					};
 					A14E0ADA1E1F987C00DFC788 = {
@@ -371,10 +383,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A14E0ABB1E1F986A00DFC788 /* HandyUIKit-iOS */,
-				A14E0AC41E1F986A00DFC788 /* HandyUIKit-iOS Tests */,
-				A14E0ADA1E1F987C00DFC788 /* HandyUIKit-tvOS */,
-				A14E0AE21E1F987C00DFC788 /* HandyUIKit-tvOS Tests */,
+				A14E0ABB1E1F986A00DFC788 /* HandyUIKit iOS */,
+				A14E0AC41E1F986A00DFC788 /* HandyUIKit iOS Tests */,
+				A14E0ADA1E1F987C00DFC788 /* HandyUIKit tvOS */,
+				A14E0AE21E1F987C00DFC788 /* HandyUIKit tvOS Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -391,7 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E1DABE520790F5900627CC2 /* Media.xcassets in Resources */,
+				2E1DABE520790F5900627CC2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,13 +418,49 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E1DABE620790F5900627CC2 /* Media.xcassets in Resources */,
+				2E1DABE620790F5900627CC2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8242F0A12189F8AD0075FDF3 /* ProjLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = ProjLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which projlint > /dev/null; then\n        projlint lint --xcode --timeout 2 --ignore-network-errors\n    else\n        echo \"warning: ProjLint not installed, download it from https://github.com/JamitLabs/ProjLint\"\n    fi\nfi\n";
+		};
+		8242F0A22189F8B30075FDF3 /* ProjLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = ProjLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which projlint > /dev/null; then\n        projlint lint --xcode --timeout 2 --ignore-network-errors\n    else\n        echo \"warning: ProjLint not installed, download it from https://github.com/JamitLabs/ProjLint\"\n    fi\nfi\n";
+		};
 		A1F2218A1E3FEF1300419B06 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,7 +473,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which swiftlint > /dev/null; then\n        swiftlint\n    else\n        echo \"SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\n    fi\nfi";
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which swiftlint > /dev/null; then\n        swiftlint --quiet\n    else\n        echo \"warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
 		};
 		A1F2218C1E3FEF2800419B06 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -439,7 +487,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which swiftlint > /dev/null; then\n        swiftlint\n    else\n        echo \"SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\n    fi\nfi";
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which swiftlint > /dev/null; then\n        swiftlint --quiet\n    else\n        echo \"warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -450,11 +498,14 @@
 			files = (
 				A1F221801E3E778F00419B06 /* ColorSpaces.swift in Sources */,
 				A1F221681E3E07DD00419B06 /* UIColorExtension.swift in Sources */,
+				8242F0A72189FE410075FDF3 /* CGPointExtension.swift in Sources */,
+				8242F0A42189FE230075FDF3 /* CGSizeExtension.swift in Sources */,
 				2E71660A207904A200135F39 /* UIImageExtension.swift in Sources */,
+				C5C8A2482181F7BE00D12F8E /* UITableViewExtension.swift in Sources */,
 				A11830F31E5996FD00CBE087 /* StringExtension.swift in Sources */,
 				A1D4453C1E59C9370014A250 /* NSAttributedStringExtension.swift in Sources */,
-				A1F2216B1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */,
 				A14E0B111E1F9B3100DFC788 /* UIViewExtension.swift in Sources */,
+				8242F0AA2189FE500075FDF3 /* CGRectExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,8 +513,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F2217C1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift in Sources */,
-				A1F221701E3E0B8400419B06 /* CoreExtensionTests.swift in Sources */,
+				A1F2217C1E3E2C5500419B06 /* CoreGraphicsExtensionsTests.swift in Sources */,
+				A1F221701E3E0B8400419B06 /* ColorExtensionTests.swift in Sources */,
 				A11830F61E599BF600CBE087 /* StringExtensionTests.swift in Sources */,
 				2E1DABDE20790C1700627CC2 /* UIImageExtensionTests.swift in Sources */,
 			);
@@ -475,11 +526,14 @@
 			files = (
 				A1F221811E3E778F00419B06 /* ColorSpaces.swift in Sources */,
 				A1F221691E3E07DD00419B06 /* UIColorExtension.swift in Sources */,
+				8242F0A82189FE410075FDF3 /* CGPointExtension.swift in Sources */,
+				8242F0A52189FE230075FDF3 /* CGSizeExtension.swift in Sources */,
 				2E71660B207904A200135F39 /* UIImageExtension.swift in Sources */,
+				C5C8A2492181F7BE00D12F8E /* UITableViewExtension.swift in Sources */,
 				A11830F41E5996FD00CBE087 /* StringExtension.swift in Sources */,
 				A1D4453D1E59C9370014A250 /* NSAttributedStringExtension.swift in Sources */,
-				A1F2216C1E3E08AF00419B06 /* CoreGraphicsExtension.swift in Sources */,
 				A14E0B121E1F9B3100DFC788 /* UIViewExtension.swift in Sources */,
+				8242F0AB2189FE500075FDF3 /* CGRectExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,8 +541,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F2217D1E3E2C5500419B06 /* CoreGraphicsExtensionTests.swift in Sources */,
-				A1F221711E3E0B8500419B06 /* CoreExtensionTests.swift in Sources */,
+				A1F2217D1E3E2C5500419B06 /* CoreGraphicsExtensionsTests.swift in Sources */,
+				A1F221711E3E0B8500419B06 /* ColorExtensionTests.swift in Sources */,
 				A11830F71E599BF600CBE087 /* StringExtensionTests.swift in Sources */,
 				2E1DABDF20790C1700627CC2 /* UIImageExtensionTests.swift in Sources */,
 			);
@@ -499,12 +553,12 @@
 /* Begin PBXTargetDependency section */
 		A14E0AC81E1F986A00DFC788 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A14E0ABB1E1F986A00DFC788 /* HandyUIKit-iOS */;
+			target = A14E0ABB1E1F986A00DFC788 /* HandyUIKit iOS */;
 			targetProxy = A14E0AC71E1F986A00DFC788 /* PBXContainerItemProxy */;
 		};
 		A14E0AE61E1F987C00DFC788 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A14E0ADA1E1F987C00DFC788 /* HandyUIKit-tvOS */;
+			target = A14E0ADA1E1F987C00DFC788 /* HandyUIKit tvOS */;
 			targetProxy = A14E0AE51E1F987C00DFC788 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -559,13 +613,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -615,11 +670,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -637,16 +693,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D IOS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKit;
 				PRODUCT_NAME = HandyUIKit;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -660,15 +714,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D IOS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKit;
 				PRODUCT_NAME = HandyUIKit;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -677,11 +729,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 767S6EFMJ8;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -690,11 +741,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 767S6EFMJ8;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -708,7 +758,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKit;
@@ -716,7 +766,6 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -732,14 +781,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Frameworks/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKit;
 				PRODUCT_NAME = HandyUIKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -750,13 +798,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 767S6EFMJ8;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flinesoft.HandyUIKit-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 10.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -765,13 +812,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 767S6EFMJ8;
-				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Tests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flinesoft.HandyUIKit-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 10.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -787,7 +833,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A14E0AD01E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-iOS" */ = {
+		A14E0AD01E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A14E0AD11E1F986A00DFC788 /* Debug */,
@@ -796,7 +842,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A14E0AD31E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-iOS Tests" */ = {
+		A14E0AD31E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A14E0AD41E1F986A00DFC788 /* Debug */,
@@ -805,7 +851,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A14E0AEC1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-tvOS" */ = {
+		A14E0AEC1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A14E0AED1E1F987C00DFC788 /* Debug */,
@@ -814,7 +860,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A14E0AEF1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-tvOS Tests" */ = {
+		A14E0AEF1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit tvOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A14E0AF01E1F987C00DFC788 /* Debug */,

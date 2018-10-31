@@ -1,7 +1,4 @@
 //
-//  UIImageExtensionTests.swift
-//  HandyUIKit
-//
 //  Created by Cihat Gündüz on 07.04.18.
 //  Copyright © 2018 Flinesoft. All rights reserved.
 //
@@ -21,7 +18,7 @@ class UIImageExtensionTests: XCTestCase {
         let image = UIImage(named: "matt-lamers-261639-unsplash", in: Bundle(for: UIImageExtensionTests.self), compatibleWith: nil)!
 
         measure {
-            (0..<5).forEach { _ in
+            (0 ..< 5).forEach { _ in
                 _ = image.toGrayscale()
             }
         }
