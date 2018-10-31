@@ -318,17 +318,13 @@ Registers a nib with the name of `viewType` if it exists or registers the class 
 tableView.registerHeaderFooterView(ofType: MyUITableHeaderFooterView.self)
 ```
 
+
+
 ## Contributing
 
-Contributions are welcome. Please just open an Issue on GitHub to discuss a point or request a feature or send a Pull Request with your suggestion. If there's a related discussion on the Swift Evolution mailing list, please also post the thread name with a link.
-
-Pull requests with new features will only be accepted when the following are given:
-- The UI feature is **handy** but not (yet) part of UIKit.
-- **Tests** for the new feature exist and all tests pass successfully.
-- **Usage examples** of the new feature are given in the Playgrounds.
-
-Please also try to follow the same syntax and semantic in your **commit messages** (see rationale [here](http://chris.beams.io/posts/git-commit/)).
+See the file [CONTRIBUTING.md](https://github.com/Flinesoft/HandyUIKit/blob/stable/CONTRIBUTING.md).
 
 
 ## License
+
 This library is released under the [MIT License](http://opensource.org/licenses/MIT). See LICENSE for details.
