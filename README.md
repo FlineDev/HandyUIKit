@@ -4,8 +4,8 @@ width=600>
 </p>
 
 <p align="center">
-<a href="https://app.bitrise.io/app/c77eb6063e52fe8e">
-<img src="https://app.bitrise.io/app/c77eb6063e52fe8e/status.svg?token=OYicGI_yNhaQnpOsnVEypw&branch=stable"
+<a href="https://app.bitrise.io/app/cce23f751e04f2e8">
+<img src="https://app.bitrise.io/app/cce23f751e04f2e8/status.svg?token=-uKTcCmkHy_yh9vVitCxvA&branch=stable"
 alt="Build Status">
 </a>
 <a href="https://codebeat.co/projects/github-com-flinesoft-handyuikit">
@@ -16,8 +16,8 @@ alt="codebeat badge">
 <img src="https://img.shields.io/badge/Version-1.7.3-blue.svg"
 alt="Version: 1.7.3">
 </a>
-<img src="https://img.shields.io/badge/Swift-4.1-FFAC45.svg"
-alt="Swift: 4.1">
+<img src="https://img.shields.io/badge/Swift-4.2-FFAC45.svg"
+alt="Swift: 4.2">
 <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-FF69B4.svg"
 alt="Platforms: iOS | tvOS">
 <a href="https://github.com/Flinesoft/HandyUIKit/blob/stable/LICENSE.md">
@@ -43,40 +43,10 @@ If you like this, please also checkout [HandySwift](https://github.com/Flinesoft
 
 ## Installation
 
-Currently the recommended way of installing this library is via [Carthage](https://github.com/Carthage/Carthage).
-[Cocoapods](https://github.com/CocoaPods/CocoaPods) is supported, too.
+Currently the recommended way of installing this library is via [Carthage](https://github.com/Carthage/Carthage). [Cocoapods](https://github.com/CocoaPods/CocoaPods) might work, too, but is not tested.
 
 You can of course also just include this framework manually into your project by downloading it or by using git submodules.
 
-*Note: This project is ready for Swift 4. Until Xcode 9 is officially released though, you need to use the branch "work/swift4".*
-
-### Carthage
-
-Place the following line to your Cartfile:
-
-``` Swift
-github "Flinesoft/HandyUIKit" ~> 1.6
-```
-
-Now run `carthage update`. Then drag & drop the HandyUIKit.framework in the Carthage/build folder to your project. Now you can `import HandyUIKit` in each class you want to use its features. Refer to the [Carthage README](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) for detailed / updated instructions.
-
-### CocoaPods
-
-Add the line `pod 'HandyUIKit'` to your target in your `Podfile` and make sure to include `use_frameworks!`
-at the top. The result might look similar to this:
-
-``` Ruby
-platform :ios, '8.0'
-use_frameworks!
-
-target 'MyAppTarget' do
-  pod 'HandyUIKit', '~> 1.6'
-end
-```
-
-Now close your project and run `pod install` from the command line. Then open the `.xcworkspace` from within your project folder.
-Build your project once (with `Cmd+B`) to update the frameworks known to Xcode. Now you can `import HandyUIKit` in each class you want to use its features.
-Refer to [CocoaPods.org](https://cocoapods.org) for detailed / updates instructions.
 
 ## Usage
 
@@ -317,7 +287,6 @@ Registers a nib with the name of `viewType` if it exists or registers the class 
 ```swift
 tableView.registerHeaderFooterView(ofType: MyUITableHeaderFooterView.self)
 ```
-
 
 
 ## Contributing

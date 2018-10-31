@@ -1,7 +1,4 @@
 //
-//  UIColorExtension.swift
-//  HandyUIKit
-//
 //  Created by Cihat Gündüz on 29.01.17.
 //  Copyright © 2017 Flinesoft. All rights reserved.
 //
@@ -20,19 +17,16 @@ extension UIColor {
     /// - Brightness:   The brightness color part of HSB.
     ///
     public enum ChangeableAttribute {
-        case red, green, blue, hueHSB, saturation, brightness, hueHLC, luminance, chroma, alpha
-    }
-
-    /// Initializes and returns a color with the given HLCA values.
-    ///
-    /// - Parameters:
-    ///   - hue:        The hue. A value between 0 and 1.
-    ///   - luminance:  The luminance. A value between 0 and 1.
-    ///   - chroma:     The chroma. A value between 0 and 1.
-    ///   - alpha:      The alpha. A value between 0 and 1.
-    public convenience init(hue: CGFloat, luminance: CGFloat, chroma: CGFloat, alpha: CGFloat) {
-        let rgb = LCHColor(l: luminance * 100, c: chroma * 128, h: hue * 360, alpha: alpha).toRGB()
-        self.init(red: rgb.r, green: rgb.g, blue: rgb.b, alpha: rgb.alpha)
+        case red
+        case green
+        case blue
+        case hueHSB
+        case saturation
+        case brightness
+        case hueHLC
+        case luminance
+        case chroma
+        case alpha
     }
 
     // MARK: - Computed Properties
@@ -56,6 +50,18 @@ extension UIColor {
         getRed(&red, green: &green, blue: &blue, alpha: &alpha)
 
         return (red: red, green: green, blue: blue, alpha: alpha)
+    }
+
+    /// Initializes and returns a color with the given HLCA values.
+    ///
+    /// - Parameters:
+    ///   - hue:        The hue. A value between 0 and 1.
+    ///   - luminance:  The luminance. A value between 0 and 1.
+    ///   - chroma:     The chroma. A value between 0 and 1.
+    ///   - alpha:      The alpha. A value between 0 and 1.
+    public convenience init(hue: CGFloat, luminance: CGFloat, chroma: CGFloat, alpha: CGFloat) {
+        let rgb = LCHColor(l: luminance * 100, c: chroma * 128, h: hue * 360, alpha: alpha).toRGB()
+        self.init(red: rgb.r, green: rgb.g, blue: rgb.b, alpha: rgb.alpha)
     }
 
     // MARK: - Methods

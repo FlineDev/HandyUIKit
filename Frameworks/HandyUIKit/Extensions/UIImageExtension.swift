@@ -1,7 +1,4 @@
 //
-//  UIImageExtension.swift
-//  HandyUIKit
-//
 //  Created by Cihat Gündüz on 07.04.18.
 //  Copyright © 2018 Flinesoft. All rights reserved.
 //

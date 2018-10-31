@@ -1,7 +1,4 @@
 //
-//  UIViewExtension.swift
-//  HandyUIKit
-//
 //  Created by Cihat Gündüz on 06.01.17.
 //  Copyright © 2017 Flinesoft. All rights reserved.
 //
@@ -9,6 +6,36 @@
 import UIKit
 
 extension UIView {
+    /// Finds all superviews in the view hierarchy.
+    ///
+    /// - Returns: A list of all superview starting with the superview of this view if any.
+    public var superviews: [UIView] {
+        guard let superview = superview else { return [] }
+
+        var superviews: [UIView] = [superview]
+        while let nextLevelSuperview = superviews.last!.superview {
+            superviews.append(nextLevelSuperview)
+        }
+
+        return superviews
+    }
+
+    /// Finds the firstResponder in this view hierarchy by traversing its subviews recursively.
+    ///
+    /// NOTE: Uses DFS (depth first search).
+    ///
+    /// - Returns: The firstResponder view in the subview hierarchy.
+    public var firstResponder: UIView? {
+        guard !isFirstResponder else { return self }
+
+        for subview in subviews {
+            guard let firstResponder = subview.firstResponder else { continue }
+            return firstResponder
+        }
+
+        return nil
+    }
+
 #if IOS
 
     /// Animates view changes alongside keyboard animation using the same duration and animation curve.
@@ -18,10 +45,12 @@ extension UIView {
     ///   - animations: The changes to animate.
     ///   - completion: Any work to be done after animations has completed.
     static func animateAlongsideKeyboard(_ notification: Notification, animations: @escaping () -> Void, completion: ((Bool) -> Void)? = nil) {
-        guard let userInfo = notification.userInfo,
-                let durationNumber = userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber,
-                let curveNumber = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber,
-                let curve = UIViewAnimationCurve(rawValue: curveNumber.intValue) else {
+        guard
+            let userInfo = notification.userInfo,
+            let durationNumber = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber,
+            let curveNumber = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber,
+            let curve = UIView.AnimationCurve(rawValue: curveNumber.intValue)
+        else {
             animations()
             return
         }
@@ -60,25 +89,15 @@ extension UIView {
 
         translatesAutoresizingMaskIntoConstraints = false
         ["H:|-0-[subview]-0-|", "V:|-0-[subview]-0-|"].forEach { visualFormat in
-            superview.addConstraints(NSLayoutConstraint.constraints(
-                withVisualFormat: visualFormat, options: .directionLeadingToTrailing,
-                metrics: nil, views: ["subview": self])
+            superview.addConstraints(
+                NSLayoutConstraint.constraints(
+                    withVisualFormat: visualFormat,
+                    options: .directionLeadingToTrailing,
+                    metrics: nil,
+                    views: ["subview": self]
+                )
             )
         }
-    }
-
-    /// Finds all superviews in the view hierarchy.
-    ///
-    /// - Returns: A list of all superview starting with the superview of this view if any.
-    public var superviews: [UIView] {
-        guard let superview = superview else { return [] }
-
-        var superviews: [UIView] = [superview]
-        while let nextLevelSuperview = superviews.last!.superview {
-            superviews.append(nextLevelSuperview)
-        }
-
-        return superviews
     }
 
     /// Finds the first superview of all superviews matching a predicate.
@@ -105,26 +124,10 @@ extension UIView {
     public func firstSubviewInHierarchy(matching predicate: (UIView) -> Bool) -> UIView? {
         return subviews.first(where: predicate) ?? subviews.first { $0.firstSubviewInHierarchy(matching: predicate) != nil }
     }
-
-    /// Finds the firstResponder in this view hierarchy by traversing its subviews recursively.
-    ///
-    /// NOTE: Uses DFS (depth first search).
-    ///
-    /// - Returns: The firstResponder view in the subview hierarchy.
-    public var firstResponder: UIView? {
-        guard !isFirstResponder else { return self }
-
-        for subview in subviews {
-            guard let firstResponder = subview.firstResponder else { continue }
-            return firstResponder
-        }
-
-        return nil
-    }
 }
 
-extension UIViewAnimationCurve {
-    fileprivate func toOptions() -> UIViewAnimationOptions {
-        return UIViewAnimationOptions(rawValue: UInt(rawValue << 16))
+extension UIView.AnimationCurve {
+    fileprivate func toOptions() -> UIView.AnimationOptions {
+        return UIView.AnimationOptions(rawValue: UInt(rawValue << 16))
     }
 }

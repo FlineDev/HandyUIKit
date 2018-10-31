@@ -1,7 +1,4 @@
 //
-//  NSAttributedStringExtension.swift
-//  HandyUIKit
-//
 //  Created by Cihat Gündüz on 19.02.17.
 //  Copyright © 2017 Flinesoft. All rights reserved.
 //
@@ -35,7 +32,7 @@ extension NSAttributedString {
 
     private func rect(for constraintSize: CGSize, font: UIFont) -> CGRect {
         let copy = mutableCopy() as! NSMutableAttributedString // swiftlint:disable:this force_cast
-        copy.addAttribute(NSAttributedStringKey.font, value: font, range: NSRange(location: 0, length: length))
+        copy.addAttribute(NSAttributedString.Key.font, value: font, range: NSRange(location: 0, length: length))
 
         return copy.boundingRect(with: constraintSize, options: .usesLineFragmentOrigin, context: nil)
     }

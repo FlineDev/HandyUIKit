@@ -10,7 +10,7 @@ rules:
         SwiftLint: |
           if [ "${CONFIGURATION}" = "Debug" ]; then
               if which swiftlint > /dev/null; then
-                  swiftlint
+                  swiftlint --quiet
               else
                   echo "warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint"
               fi

@@ -1,7 +1,4 @@
 //
-//  CoreExtensionTests.swift
-//  HandyUIKit
-//
 //  Created by Cihat Gündüz on 29.01.17.
 //  Copyright © 2017 Flinesoft. All rights reserved.
 //
