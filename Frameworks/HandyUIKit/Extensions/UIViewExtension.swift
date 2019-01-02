@@ -82,13 +82,16 @@ extension UIView {
 
     /// Adds constraints to the superview so that this view has same size and position.
     /// Note: This fails the build if the `superview` is `nil` – add it as a subview before calling this.
-    public func bindEdgesToSuperview() {
+    ///
+    /// - Parameters:
+    ///   - edgeInsets: Insets from the edge. Defaults to 0 on all edges.
+    public func bindEdgesToSuperview(insets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)) {
         guard let superview = superview else {
             preconditionFailure("`superview` was nil – call `addSubview(view: UIView)` before calling `bindEdgesToSuperview()` to fix this.")
         }
 
         translatesAutoresizingMaskIntoConstraints = false
-        ["H:|-0-[subview]-0-|", "V:|-0-[subview]-0-|"].forEach { visualFormat in
+        ["H:|-\(insets.left)-[subview]-\(insets.right)-|", "V:|-\(insets.top)-[subview]-\(insets.bottom)-|"].forEach { visualFormat in
             superview.addConstraints(
                 NSLayoutConstraint.constraints(
                     withVisualFormat: visualFormat,
