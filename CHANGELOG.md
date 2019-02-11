@@ -5,6 +5,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 ### Added
+- None.
+### Changed
+- None.
+### Deprecated
+- None.
+### Removed
+- None.
+### Fixed
+- None.
+### Security
+- None.
+
+
+## [1.9.0] - 2019-02-11
+### Added
 - New `NibLoadable` protocol for loading `UIView` subclasses from XIB files both from code and IB files.
 - New `RoundableView` IBDesignable with `cornerRadius` defined for use right within Interface Builder files.
 - New `TemplateButton` IBDesignable with `image` always rendered as `.alwaysTemplate` for use right within IB files.
