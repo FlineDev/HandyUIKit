@@ -13,8 +13,8 @@ alt="Build Status">
 alt="codebeat badge">
 </a>
 <a href="https://github.com/Flinesoft/HandyUIKit/releases">
-<img src="https://img.shields.io/badge/Version-1.8.0-blue.svg"
-alt="Version: 1.8.0">
+<img src="https://img.shields.io/badge/Version-1.9.0-blue.svg"
+alt="Version: 1.9.0">
 </a>
 <img src="https://img.shields.io/badge/Swift-4.2-FFAC45.svg"
 alt="Swift: 4.2">
