@@ -5,9 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 ### Added
-- None.
+- New `NibLoadable` protocol for loading `UIView` subclasses from XIB files both from code and IB files.
+- New `RoundableView` IBDesignable with `cornerRadius` defined for use right within Interface Builder files.
+- New `TemplateButton` IBDesignable with `image` always rendered as `.alwaysTemplate` for use right within IB files.
+- New `TemplateImageView` IBDesignable with `image` always rendered as `.alwaysTemplate` for use right within IB files.
+- New `visibleViewController` properties on `UIWindow` to get the currently presented view controller globally.
 ### Changed
-- None.
+- The `bindEdgesToSuperview` method now supports an optional `insets` parameter of type `UIEdgeInsets`
 ### Deprecated
 - None.
 ### Removed
