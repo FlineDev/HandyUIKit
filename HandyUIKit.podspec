@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HandyUIKit"
-  s.version      = "1.8.0"
+  s.version      = "1.9.0"
   s.summary      = "Handy UI features that should have been part of UIKit in the first place."
 
   s.description  = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/Flinesoft/HandyUIKit.git", :tag => "#{s.version}" }
-  s.source_files = "Framework/Sources/**/*.swift"
+  s.source_files = "Frameworks/HandyUIKit/**/*.swift"
   s.framework    = "UIKit"
   s.swift_version = "4.2"
 

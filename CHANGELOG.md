@@ -5,6 +5,40 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 ### Added
+- None.
+### Changed
+- None.
+### Deprecated
+- None.
+### Removed
+- None.
+### Fixed
+- None.
+### Security
+- None.
+
+
+## [1.9.0] - 2019-02-11
+### Added
+- New `NibLoadable` protocol for loading `UIView` subclasses from XIB files both from code and IB files.
+- New `RoundableView` IBDesignable with `cornerRadius` defined for use right within Interface Builder files.
+- New `TemplateButton` IBDesignable with `image` always rendered as `.alwaysTemplate` for use right within IB files.
+- New `TemplateImageView` IBDesignable with `image` always rendered as `.alwaysTemplate` for use right within IB files.
+- New `visibleViewController` properties on `UIWindow` to get the currently presented view controller globally.
+### Changed
+- The `bindEdgesToSuperview` method now supports an optional `insets` parameter of type `UIEdgeInsets`
+### Deprecated
+- None.
+### Removed
+- None.
+### Fixed
+- None.
+### Security
+- None.
+
+
+## [1.8.0] - 2018-10-31
+### Added
 - UITableViewExtension to dequeue cells, headers & footers with static typing.
   via [#10](https://github.com/Flinesoft/HandyUIKit/pull/10) by [Murat Yilmaz](https://github.com/roccx)
 ### Changed

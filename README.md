@@ -13,8 +13,8 @@ alt="Build Status">
 alt="codebeat badge">
 </a>
 <a href="https://github.com/Flinesoft/HandyUIKit/releases">
-<img src="https://img.shields.io/badge/Version-1.8.0-blue.svg"
-alt="Version: 1.8.0">
+<img src="https://img.shields.io/badge/Version-1.9.0-blue.svg"
+alt="Version: 1.9.0">
 </a>
 <img src="https://img.shields.io/badge/Swift-4.2-FFAC45.svg"
 alt="Swift: 4.2">
@@ -63,6 +63,12 @@ Open the Playground from within the `.xcworkspace` in order for it to work.
   - [StringExtension](#stringextension)
   - [UIImageExtension](#uiimageextension)
   - [UITableViewExtension](#uitableviewextension)
+  - [UIWindowExtension](#uiwindowextension)
+- [NibLoadable](#nibloadable)
+- **IBDesignables**
+	- [RoundableView](#roundableview)
+	- [TemplateButton](#templatebutton)
+	- [TemplateImageView](#templateimageview)
 
 ---
 
@@ -288,6 +294,60 @@ Registers a nib with the name of `viewType` if it exists or registers the class 
 tableView.registerHeaderFooterView(ofType: MyUITableHeaderFooterView.self)
 ```
 
+### UIWindowExtension
+#### visibleViewController
+
+Returns the currently visible view controller if any reachable within the window.
+
+#### visibleViewController(from:)
+
+Recursively follows navigation controllers, tab bar controllers and modal presented view controllers starting from the given view controller to find the currently visible view controller.
+
+### NibLoadable
+
+This is a protocol helper you can make any `UIView` subclass conform to. The situation where you might want to do this is when you want to design a `UIView` subclass in a XIB file. In this case, just make your view type conform to `NibLoadable` like this:
+
+```swift
+class MyTableViewCell: UITableViewCell, NibLoadable {
+		// your code
+}
+```
+
+By default `NibLoadable` will search for a file named like your type, for example `MyTableViewCell.xib` within the project and load it. You can override `static var nibName: String` to change this behavior if you need to.
+
+Your view must be set as the `Files owner` within the XIB file, also there must be only one root `UIView` object (which should just be of type `UIView`, not your subclass).
+
+Now you can add `IBOutlets` and `IBActions` to your subclass and connect them within the XIB file to the `Files owner`. 
+
+In order to make loading work from both code and Storyboards, call `loadFromNib()` from within your init methods like so:
+
+```swift
+required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    loadFromNib()
+}
+
+override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    super.init(style: style, reuseIdentifier: reuseIdentifier)
+    loadFromNib()
+}
+```
+
+That's it, now you should be able to load your custom view types designed within XIBs from code & in Storyboards. For Storyboard usage, simply add a `UIView` object and change it's type to your view subclass and everything should work when running your app. To see your custom view within Interface Builder, add `@IBDesignable` in front of the class declaration.
+
+If you need to do any setup steps after the IBOutlets are loaded, you can override `nibDidLoad` which can be seen as the analogous to `viewDidLoad` in view controller in this perspective.
+
+### RoundableView
+
+This is an `IBDesignable` subclass of `UIView` which provides the `cornerRadius` to be set right from within Interface Builder. Simply add a `UIView` object to your IB file and change it's type to `RoundableView` and you should see `cornerRadius` within the property inspector.
+
+### TemplateButton
+
+This is an `IBDesignable` subclass of `UIButton` which will automatically make the `image` a mask for the `tintColor` value by setting the image rendering mode to `.alwaysTemplate` automatically.
+
+### TemplateImageView
+
+This is an `IBDesignable` subclass of `UIImageView` which will automatically make the `image` a mask for the `tintColor` value by setting the image rendering mode to `.alwaysTemplate` automatically.
 
 ## Contributing
 
