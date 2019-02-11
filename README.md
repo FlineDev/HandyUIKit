@@ -63,6 +63,7 @@ Open the Playground from within the `.xcworkspace` in order for it to work.
   - [StringExtension](#stringextension)
   - [UIImageExtension](#uiimageextension)
   - [UITableViewExtension](#uitableviewextension)
+  - [UIWindowExtension](#uiwindowextension)
 - [NibLoadable](#nibloadable)
 - **IBDesignables**
 	- [RoundableView](#roundableview)
@@ -292,6 +293,15 @@ Registers a nib with the name of `viewType` if it exists or registers the class 
 ```swift
 tableView.registerHeaderFooterView(ofType: MyUITableHeaderFooterView.self)
 ```
+
+### UIWindowExtension
+#### visibleViewController
+
+Returns the currently visible view controller if any reachable within the window.
+
+#### visibleViewController(from:)
+
+Recursively follows navigation controllers, tab bar controllers and modal presented view controllers starting from the given view controller to find the currently visible view controller.
 
 ### NibLoadable
 
