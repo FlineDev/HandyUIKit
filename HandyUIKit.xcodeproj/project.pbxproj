@@ -13,6 +13,14 @@
 		2E1DABE620790F5900627CC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DABE420790F5900627CC2 /* Images.xcassets */; };
 		2E71660A207904A200135F39 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E716609207904A200135F39 /* UIImageExtension.swift */; };
 		2E71660B207904A200135F39 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E716609207904A200135F39 /* UIImageExtension.swift */; };
+		8218E4C92211BE3B007AAAF3 /* RoundableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218E4C82211BE3B007AAAF3 /* RoundableView.swift */; };
+		8218E4CA2211BE3B007AAAF3 /* RoundableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218E4C82211BE3B007AAAF3 /* RoundableView.swift */; };
+		8218E4CC2211BE8A007AAAF3 /* TemplateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218E4CB2211BE8A007AAAF3 /* TemplateButton.swift */; };
+		8218E4CD2211BE8A007AAAF3 /* TemplateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218E4CB2211BE8A007AAAF3 /* TemplateButton.swift */; };
+		8218E4CF2211BEA8007AAAF3 /* TemplateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218E4CE2211BEA8007AAAF3 /* TemplateImageView.swift */; };
+		8218E4D02211BEA8007AAAF3 /* TemplateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218E4CE2211BEA8007AAAF3 /* TemplateImageView.swift */; };
+		8218E4D22211BEDC007AAAF3 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218E4D12211BEDC007AAAF3 /* NibLoadable.swift */; };
+		8218E4D32211BEDC007AAAF3 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218E4D12211BEDC007AAAF3 /* NibLoadable.swift */; };
 		8242F0A42189FE230075FDF3 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242F0A32189FE230075FDF3 /* CGSizeExtension.swift */; };
 		8242F0A52189FE230075FDF3 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242F0A32189FE230075FDF3 /* CGSizeExtension.swift */; };
 		8242F0A72189FE410075FDF3 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242F0A62189FE410075FDF3 /* CGPointExtension.swift */; };
@@ -62,10 +70,13 @@
 		2E1DABDD20790C1700627CC2 /* UIImageExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensionTests.swift; sourceTree = "<group>"; };
 		2E1DABE420790F5900627CC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E716609207904A200135F39 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		8218E4C82211BE3B007AAAF3 /* RoundableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundableView.swift; sourceTree = "<group>"; };
+		8218E4CB2211BE8A007AAAF3 /* TemplateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateButton.swift; sourceTree = "<group>"; };
+		8218E4CE2211BEA8007AAAF3 /* TemplateImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateImageView.swift; sourceTree = "<group>"; };
+		8218E4D12211BEDC007AAAF3 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		8242F09C2189F59F0075FDF3 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		8242F09D2189F6FD0075FDF3 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		8242F09F2189F7190075FDF3 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
-		8242F0A02189F8950075FDF3 /* .projlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .projlint.yml; sourceTree = "<group>"; };
 		8242F0A32189FE230075FDF3 /* CGSizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
 		8242F0A62189FE410075FDF3 /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 		8242F0A92189FE500075FDF3 /* CGRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
@@ -125,12 +136,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E1DABE020790DC300627CC2 /* Resoruces */ = {
+		2E1DABE020790DC300627CC2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				2E1DABE420790F5900627CC2 /* Images.xcassets */,
 			);
-			path = Resoruces;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8218E4C72211BE28007AAAF3 /* IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				8218E4C82211BE3B007AAAF3 /* RoundableView.swift */,
+				8218E4CB2211BE8A007AAAF3 /* TemplateButton.swift */,
+				8218E4CE2211BEA8007AAAF3 /* TemplateImageView.swift */,
+			);
+			path = IBDesignables;
+			sourceTree = "<group>";
+		};
+		8218E4D42211C17F007AAAF3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2216D1E3E0B7700419B06 /* ColorExtensionTests.swift */,
+				A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionsTests.swift */,
+				A11830F51E599BF600CBE087 /* StringExtensionTests.swift */,
+				2E1DABDD20790C1700627CC2 /* UIImageExtensionTests.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A14E0AB21E1F986A00DFC788 = {
@@ -167,7 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				A1F2217F1E3E778F00419B06 /* ColorSpaces.swift */,
+				8218E4D12211BEDC007AAAF3 /* NibLoadable.swift */,
 				A14E0B0C1E1F9B3100DFC788 /* Extensions */,
+				8218E4C72211BE28007AAAF3 /* IBDesignables */,
 			);
 			path = HandyUIKit;
 			sourceTree = "<group>";
@@ -192,11 +226,8 @@
 		A14E0AF81E1F98E400DFC788 /* HandyUIKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				A1F2216D1E3E0B7700419B06 /* ColorExtensionTests.swift */,
-				A1F2217B1E3E2C5500419B06 /* CoreGraphicsExtensionsTests.swift */,
-				A11830F51E599BF600CBE087 /* StringExtensionTests.swift */,
-				2E1DABDD20790C1700627CC2 /* UIImageExtensionTests.swift */,
-				2E1DABE020790DC300627CC2 /* Resoruces */,
+				8218E4D42211C17F007AAAF3 /* Extensions */,
+				2E1DABE020790DC300627CC2 /* Resources */,
 			);
 			path = HandyUIKitTests;
 			sourceTree = "<group>";
@@ -228,7 +259,6 @@
 		A1F221781E3E15E500419B06 /* RootFiles */ = {
 			isa = PBXGroup;
 			children = (
-				8242F0A02189F8950075FDF3 /* .projlint.yml */,
 				A1F221821E3FEDD600419B06 /* .swiftlint.yml */,
 				8242F09C2189F59F0075FDF3 /* CHANGELOG.md */,
 				8242F09D2189F6FD0075FDF3 /* CODE_OF_CONDUCT.md */,
@@ -270,7 +300,6 @@
 				A14E0AB91E1F986A00DFC788 /* Headers */,
 				A14E0ABA1E1F986A00DFC788 /* Resources */,
 				A1F2218C1E3FEF2800419B06 /* SwiftLint */,
-				8242F0A12189F8AD0075FDF3 /* ProjLint */,
 			);
 			buildRules = (
 			);
@@ -425,24 +454,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8242F0A12189F8AD0075FDF3 /* ProjLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = ProjLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which projlint > /dev/null; then\n        projlint lint --xcode --timeout 2 --ignore-network-errors\n    else\n        echo \"warning: ProjLint not installed, download it from https://github.com/JamitLabs/ProjLint\"\n    fi\nfi\n";
-		};
 		8242F0A22189F8B30075FDF3 /* ProjLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -503,9 +514,13 @@
 				2E71660A207904A200135F39 /* UIImageExtension.swift in Sources */,
 				C5C8A2482181F7BE00D12F8E /* UITableViewExtension.swift in Sources */,
 				A11830F31E5996FD00CBE087 /* StringExtension.swift in Sources */,
+				8218E4CF2211BEA8007AAAF3 /* TemplateImageView.swift in Sources */,
+				8218E4C92211BE3B007AAAF3 /* RoundableView.swift in Sources */,
+				8218E4D22211BEDC007AAAF3 /* NibLoadable.swift in Sources */,
 				A1D4453C1E59C9370014A250 /* NSAttributedStringExtension.swift in Sources */,
 				A14E0B111E1F9B3100DFC788 /* UIViewExtension.swift in Sources */,
 				8242F0AA2189FE500075FDF3 /* CGRectExtension.swift in Sources */,
+				8218E4CC2211BE8A007AAAF3 /* TemplateButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,9 +546,13 @@
 				2E71660B207904A200135F39 /* UIImageExtension.swift in Sources */,
 				C5C8A2492181F7BE00D12F8E /* UITableViewExtension.swift in Sources */,
 				A11830F41E5996FD00CBE087 /* StringExtension.swift in Sources */,
+				8218E4D02211BEA8007AAAF3 /* TemplateImageView.swift in Sources */,
+				8218E4CA2211BE3B007AAAF3 /* RoundableView.swift in Sources */,
+				8218E4D32211BEDC007AAAF3 /* NibLoadable.swift in Sources */,
 				A1D4453D1E59C9370014A250 /* NSAttributedStringExtension.swift in Sources */,
 				A14E0B121E1F9B3100DFC788 /* UIViewExtension.swift in Sources */,
 				8242F0AB2189FE500075FDF3 /* CGRectExtension.swift in Sources */,
+				8218E4CD2211BE8A007AAAF3 /* TemplateButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

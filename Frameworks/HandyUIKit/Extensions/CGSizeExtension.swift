@@ -1,7 +1,4 @@
-//
-//  Created by Cihat Gündüz on 31.10.18.
-//  Copyright © 2018 Flinesoft. All rights reserved.
-//
+// Created by Cihat Gündüz on 31.10.18.
 
 import UIKit
 
