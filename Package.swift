@@ -17,6 +17,5 @@ let package = Package(
             dependencies: ["HandyUIKit"],
             exclude: ["Tests/SupportingFiles"]
         )
-    ],
-    swiftLanguageVersions: [4_2]
+    ]
 )
