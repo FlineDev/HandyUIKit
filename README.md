@@ -13,8 +13,8 @@ alt="Build Status">
 alt="codebeat badge">
 </a>
 <a href="https://github.com/Flinesoft/HandyUIKit/releases">
-<img src="https://img.shields.io/badge/Version-1.9.0-blue.svg"
-alt="Version: 1.9.0">
+<img src="https://img.shields.io/badge/Version-1.9.1-blue.svg"
+alt="Version: 1.9.1">
 </a>
 <img src="https://img.shields.io/badge/Swift-4.2-FFAC45.svg"
 alt="Swift: 4.2">
@@ -317,7 +317,7 @@ By default `NibLoadable` will search for a file named like your type, for exampl
 
 Your view must be set as the `Files owner` within the XIB file, also there must be only one root `UIView` object (which should just be of type `UIView`, not your subclass).
 
-Now you can add `IBOutlets` and `IBActions` to your subclass and connect them within the XIB file to the `Files owner`. 
+Now you can add `IBOutlets` and `IBActions` to your subclass and connect them within the XIB file to the `Files owner`.
 
 In order to make loading work from both code and Storyboards, call `loadFromNib()` from within your init methods like so:
 
