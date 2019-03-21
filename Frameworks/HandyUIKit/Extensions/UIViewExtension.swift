@@ -88,7 +88,7 @@ extension UIView {
         }
 
         translatesAutoresizingMaskIntoConstraints = false
-        ["H:|-\(insets.left)-[subview]-\(insets.right)-|", "V:|-\(insets.top)-[subview]-\(insets.bottom)-|"].forEach { visualFormat in
+        ["H:|-(\(insets.left))-[subview]-(\(insets.right))-|", "V:|-(\(insets.top))-[subview]-(\(insets.bottom))-|"].forEach { visualFormat in
             superview.addConstraints(
                 NSLayoutConstraint.constraints(
                     withVisualFormat: visualFormat,
