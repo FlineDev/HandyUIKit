@@ -4,7 +4,7 @@ import UIKit
 
 @IBDesignable
 open class RoundableView: UIView {
-    @IBInspectable public var cornerRadius: CGFloat = 0 {
+    @IBInspectable open var cornerRadius: CGFloat = 0 {
         didSet {
             update()
         }
