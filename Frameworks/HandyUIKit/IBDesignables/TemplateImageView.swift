@@ -3,7 +3,7 @@
 import UIKit
 
 @IBDesignable
-public class TemplateImageView: UIImageView {
+open class TemplateImageView: UIImageView {
     override public var image: UIImage? {
         get {
             return super.image
