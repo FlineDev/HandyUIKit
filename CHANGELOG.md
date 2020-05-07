@@ -1,7 +1,21 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
+
+<details>
+<summary>Formatting Rules for Entries</summary>
+Each entry should use the following format:
+
+```markdown
+- Summary of what was changed in a single line using past tense & followed by two whitespaces.  
+  Issue: [#0](https://github.com/Flinesoft/HandySwift/issues/0) | PR: [#0](https://github.com/Flinesoft/HandySwift/pull/0) | Author: [Cihat Gündüz](https://github.com/Jeehut)
+```
+
+Note that at the end of the summary line, you need to add two whitespaces (`  `) for correct rendering on GitHub.
+
+If needed, pluralize to `Tasks`, `PRs` or `Authors` and list multiple entries separated by `, `. Also, remove entries not needed in the second line.
+</details>
 
 ## [Unreleased]
 ### Added
@@ -17,6 +31,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Security
 - None.
 
+## [1.9.2] - 2020-05-07
+### Added
+- Made `cornerRadius` and `IBDesignable`s available for override.
+### Changed
+- Updated code to Xcode 11.4 & Swift 5.
 
 ## [1.9.0] - 2019-02-11
 ### Added
