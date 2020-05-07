@@ -1,28 +1,38 @@
-// Created by Cihat Gündüz on 29.01.17.
+// Copyright © 2017 Flinesoft. All rights reserved.
 
 import UIKit
 
 extension UIColor {
     /// A list of changeable attributes of the UIColor.
     ///
-    /// - Red:          The red color part of RGB.
-    /// - Green:        The green color part of RGB.
-    /// - Blue:         The blue color part of RGB.
-    /// - Alpha:        The alpha color part of RGB / HSB / HLC.
-    /// - Hue:          The hue color part of HSB / HLC.
-    /// - Saturation:   The saturation color part of HSB.
-    /// - Brightness:   The brightness color part of HSB.
+    /// - Red:
+    /// - Green:
+    /// - Blue:
+    /// - Alpha:
+    /// - Hue:
+    /// - Saturation:
+    /// - Brightness:
     ///
     public enum ChangeableAttribute {
+        /// The red color part of RGB.
         case red
+        /// The green color part of RGB.
         case green
+        /// The blue color part of RGB.
         case blue
+        /// The hue color part of HSB.
         case hueHSB
+        /// The saturation color part of HSB.
         case saturation
+        /// The brightness color part of HSB.
         case brightness
+        /// The hue color part of HLC.
         case hueHLC
+        /// The luminance color part of HLC.
         case luminance
+        /// The chroma color part of HLC.
         case chroma
+        /// The alpha color part of RGB / HSB / HLC.
         case alpha
     }
 

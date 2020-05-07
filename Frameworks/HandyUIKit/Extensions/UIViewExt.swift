@@ -1,4 +1,4 @@
-// Created by Cihat Gündüz on 06.01.17.
+// Copyright © 2018 Flinesoft. All rights reserved.
 
 import UIKit
 
@@ -64,7 +64,7 @@ extension UIView {
 #endif
 
     /// Renders the current content of the view using its bounds to an image.
-    /// 
+    ///
     /// - Parameters:
     ///   - rect: The rect to draw into the image or `nil` to use views bounds. Defaults to `nil`.
     /// - Returns: The rendered image.
@@ -122,12 +122,12 @@ extension UIView {
     ///
     /// - Returns: The first subview in the viewhierarchy matching the given predicate or `nil` if not found.
     public func firstSubviewInHierarchy(matching predicate: (UIView) -> Bool) -> UIView? {
-        return subviews.first(where: predicate) ?? subviews.first { $0.firstSubviewInHierarchy(matching: predicate) != nil }
+        subviews.first(where: predicate) ?? subviews.first { $0.firstSubviewInHierarchy(matching: predicate) != nil }
     }
 }
 
 extension UIView.AnimationCurve {
     fileprivate func toOptions() -> UIView.AnimationOptions {
-        return UIView.AnimationOptions(rawValue: UInt(rawValue << 16))
+        UIView.AnimationOptions(rawValue: UInt(rawValue << 16))
     }
 }

@@ -1,10 +1,10 @@
-// Created by Cihat Gündüz on 31.10.18.
+// Copyright © 2018 Flinesoft. All rights reserved.
 
 import UIKit
 
 extension CGRect {
     /// Returns a new CGRect object with the origin and size converted to true pixels on the main screen.
-    public var inPixels: CGRect { return inPixels(.main) }
+    public var inPixels: CGRect { inPixels(.main) }
 
     /// Creates a new CGRect object from origin zero with given size.
     ///
@@ -26,6 +26,6 @@ extension CGRect {
     /// - Parameters:
     ///   - screen: The target screen to convert to pixels for.
     public func inPixels(_ screen: UIScreen) -> CGRect {
-        return CGRect(origin: origin.inPixels(screen), size: size.inPixels(screen))
+        CGRect(origin: origin.inPixels(screen), size: size.inPixels(screen))
     }
 }

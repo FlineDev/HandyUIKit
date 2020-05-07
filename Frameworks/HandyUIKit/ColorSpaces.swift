@@ -1,7 +1,6 @@
-// Created by Tim Wood on 10/9/15.
+// Copyright © 2015 Flinesoft. All rights reserved.
 //
 // Original source: https://github.com/timrwood/ColorSpaces
-//
 
 // swiftlint:disable all
 

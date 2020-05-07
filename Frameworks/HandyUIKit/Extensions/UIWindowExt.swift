@@ -1,11 +1,11 @@
-// Created by Cihat Gündüz on 11.02.19.
+// Copyright © 2019 Flinesoft. All rights reserved.
 
 import UIKit
 
 extension UIWindow {
     /// Returns the currently visible view controller if any reachable within the window.
     public var visibleViewController: UIViewController? {
-        return UIWindow.visibleViewController(from: rootViewController)
+        UIWindow.visibleViewController(from: rootViewController)
     }
 
     /// Recursively follows navigation controllers, tab bar controllers and modal presented view controllers starting
@@ -30,4 +30,3 @@ extension UIWindow {
         }
     }
 }
-

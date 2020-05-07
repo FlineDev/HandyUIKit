@@ -1,10 +1,10 @@
-// Created by Cihat Gündüz on 29.01.17.
+// Copyright © 2017 Flinesoft. All rights reserved.
 
 @testable import HandyUIKit
 import XCTest
 
 // Note: The tests in here work best if run on a Retina device (e.g. iPhone 6s Plus Simulator).
-class CoreGraphicsExtensionsTests: XCTestCase {
+class CoreGraphicsExtTests: XCTestCase {
     let size: CGFloat = 22
 
     func testCGSizeInPixels() {
