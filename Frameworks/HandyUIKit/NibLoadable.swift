@@ -1,4 +1,4 @@
-// Created by Cihat Gündüz on 11.02.19.
+// Copyright © 2019 Flinesoft. All rights reserved.
 
 import UIKit
 
@@ -8,7 +8,7 @@ public enum NibLoadableError: Error {
     case xibHasMultipleRootViews
 }
 
-public protocol NibLoadable: class {
+public protocol NibLoadable: AnyObject {
     static var nibName: String { get }
 
     func nibDidLoad()
@@ -17,7 +17,7 @@ public protocol NibLoadable: class {
 extension NibLoadable where Self: UIView {
     /// The name of the nib file. Defaults to the same name as the class.
     public static var nibName: String {
-        return String(describing: self)
+        String(describing: self)
     }
 
     /// Loads the contents of this view from the corresponding Nib file.
@@ -25,7 +25,7 @@ extension NibLoadable where Self: UIView {
     /// NOTE: This view must be the 'File's Owner', not the 'View' within the Nib file.
     public func loadFromNib() throws {
         let bundle = Bundle(for: type(of: self))
-        let nibName = type(of: self).nibName
+        let nibName = Self.nibName
         let nib = UINib(nibName: nibName, bundle: bundle)
 
         guard let views = nib.instantiate(withOwner: self, options: nil) as? [UIView] else {

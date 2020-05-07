@@ -1,11 +1,11 @@
-// Created by Cihat Gündüz on 29.01.17.
+// Copyright © 2017 Flinesoft. All rights reserved.
 
 // swiftlint:disable object_literal
 
 @testable import HandyUIKit
 import XCTest
 
-class ColorExtensionTests: XCTestCase {
+class ColorExtTests: XCTestCase {
     func testHlca() {
         let color = UIColor(hue: 0.1, luminance: 0.2, chroma: 0.3, alpha: 0.4)
 

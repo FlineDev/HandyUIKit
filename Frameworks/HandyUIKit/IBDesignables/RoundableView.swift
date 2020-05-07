@@ -1,10 +1,10 @@
-// Created by Cihat Gündüz on 11.02.19.
+// Copyright © 2019 Flinesoft. All rights reserved.
 
 import UIKit
 
 @IBDesignable
-public class RoundableView: UIView {
-    @IBInspectable public var cornerRadius: CGFloat = 0 {
+open class RoundableView: UIView {
+    @IBInspectable open var cornerRadius: CGFloat = 0 {
         didSet {
             update()
         }

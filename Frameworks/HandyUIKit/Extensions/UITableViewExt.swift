@@ -1,16 +1,16 @@
-// Created by Murat Yilmaz on 25.10.18.
+// Copyright © 2018 Flinesoft. All rights reserved.
 
 import UIKit
 
 extension UITableView {
     /// Returns a reusable table view cell of type `cellType` with the name of its type as reuse identifier and adds it to the table.
-    public func dequeueCell<Cell: UITableViewCell>(ofType cellType: Cell.Type, for indexPath: IndexPath) -> Cell {
-        return dequeueReusableCell(withIdentifier: String(describing: cellType), for: indexPath) as! Cell
+    public func dequeueCell<Cell: UITableViewCell>(ofType cellType: Cell.Type, for indexPath: IndexPath) -> Cell? {
+        dequeueReusableCell(withIdentifier: String(describing: cellType), for: indexPath) as? Cell
     }
 
     /// Returns a reusable header or footer view of type `viewType` with the name of its type as reuse identifier and adds it to the table.
     public func dequeueHeaderFooterView<View: UITableViewHeaderFooterView>(ofType viewType: View.Type) -> View? {
-        return dequeueReusableHeaderFooterView(withIdentifier: String(describing: viewType)) as? View
+        dequeueReusableHeaderFooterView(withIdentifier: String(describing: viewType)) as? View
     }
 
     /// Registers a nib with the name of `cellType` if it exists or registers the class of type `cellType` as reusable cell.

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HandyUIKit"
-  s.version      = "1.9.1"
+  s.version      = "1.9.2"
   s.summary      = "Handy UI features that should have been part of UIKit in the first place."
 
   s.description  = <<-DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
   s.author             = { "Cihat Gündüz" => "cocoapods@cihatguenduez.de" }
-  s.social_media_url   = "https://twitter.com/Dschee"
+  s.social_media_url   = "https://twitter.com/Jeehut"
 
   s.ios.deployment_target = "8.0"
   s.tvos.deployment_target = "9.0"
@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Flinesoft/HandyUIKit.git", :tag => "#{s.version}" }
   s.source_files = "Frameworks/HandyUIKit/**/*.swift"
   s.framework    = "UIKit"
-  s.swift_version = "4.2"
+  s.swift_version = "5.0"
 
 end

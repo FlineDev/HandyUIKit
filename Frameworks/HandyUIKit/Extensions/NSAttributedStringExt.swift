@@ -1,4 +1,4 @@
-// Created by Cihat Gündüz on 19.02.17.
+// Copyright © 2017 Flinesoft. All rights reserved.
 
 import UIKit
 
@@ -42,7 +42,7 @@ extension NSAttributedString {
     ///
     /// - Returns: The resulting attributed string with superscripted and subscripted substrings.
     public func superAndSubscripted(font: UIFont, applyFont: Bool = true) -> NSAttributedString {
-        return subscripted(font: font).superscripted(font: font, applyFont: false)
+        subscripted(font: font).superscripted(font: font, applyFont: false)
     }
 
     /// Superscripts substrings of structure ^{substring}.
@@ -53,7 +53,7 @@ extension NSAttributedString {
     ///
     /// - Returns: The resulting attributed string with superscripted substrings.
     public func superscripted(font: UIFont, applyFont: Bool = true) -> NSAttributedString {
-        return scripted(
+        scripted(
             font: font,
             regex: try! NSRegularExpression(pattern: "\\^\\{([^\\}]*)\\}"), // swiftlint:disable:this force_try
             captureBaselineOffset: font.pointSize * (1.0 - scriptedTextSizeRatio),
@@ -69,7 +69,7 @@ extension NSAttributedString {
     ///
     /// - Returns: The resulting attributed string with subscripted substrings.
     public func subscripted(font: UIFont, applyFont: Bool = true) -> NSAttributedString {
-        return scripted(
+        scripted(
             font: font,
             regex: try! NSRegularExpression(pattern: "\\_\\{([^\\}]*)\\}"), // swiftlint:disable:this force_try
             captureBaselineOffset: font.pointSize * -(scriptedTextSizeRatio / 5),

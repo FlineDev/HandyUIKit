@@ -1,12 +1,12 @@
-// Created by Cihat Gündüz on 11.02.19.
+// Copyright © 2019 Flinesoft. All rights reserved.
 
 import UIKit
 
 @IBDesignable
-public class TemplateImageView: UIImageView {
+open class TemplateImageView: UIImageView {
     override public var image: UIImage? {
         get {
-            return super.image
+            super.image
         }
 
         set {
