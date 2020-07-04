@@ -4,8 +4,9 @@ import UIKit
 
 extension UITableView {
     /// Returns a reusable table view cell of type `cellType` with the name of its type as reuse identifier and adds it to the table.
-    public func dequeueCell<Cell: UITableViewCell>(ofType cellType: Cell.Type, for indexPath: IndexPath) -> Cell? {
-        dequeueReusableCell(withIdentifier: String(describing: cellType), for: indexPath) as? Cell
+    public func dequeueCell<Cell: UITableViewCell>(ofType cellType: Cell.Type, for indexPath: IndexPath) -> Cell {
+        // swiftlint:disable:next force_cast
+        dequeueReusableCell(withIdentifier: String(describing: cellType), for: indexPath) as! Cell
     }
 
     /// Returns a reusable header or footer view of type `viewType` with the name of its type as reuse identifier and adds it to the table.
