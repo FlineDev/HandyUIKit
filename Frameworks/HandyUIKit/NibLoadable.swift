@@ -23,8 +23,7 @@ extension NibLoadable where Self: UIView {
     /// Loads the contents of this view from the corresponding Nib file.
     ///
     /// NOTE: This view must be the 'File's Owner', not the 'View' within the Nib file.
-    public func loadFromNib() throws {
-        let bundle = Bundle(for: type(of: self))
+    public func loadFromNib(bundle: Bundle) throws {
         let nibName = Self.nibName
         let nib = UINib(nibName: nibName, bundle: bundle)
 
