@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/Dschee/HandyUIKit/blob/stable/Logo.png?raw=true"
+<img src="https://github.com/Dschee/HandyUIKit/blob/main/Logo.png?raw=true"
 width=600>
 </p>
 
@@ -13,8 +13,8 @@ width=600>
              alt="codebeat badge">
     </a>
     <a href="https://github.com/Flinesoft/HandyUIKit/releases">
-        <img src="https://img.shields.io/badge/Version-1.9.2-blue.svg"
-             alt="Version: 1.9.2">
+        <img src="https://img.shields.io/badge/Version-1.9.3-blue.svg"
+             alt="Version: 1.9.3">
     </a>
     <img src="https://img.shields.io/badge/Swift-5.0-FFAC45.svg"
         alt="Swift: 5.0">

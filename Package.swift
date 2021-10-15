@@ -1,4 +1,4 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
@@ -9,13 +9,11 @@ let package = Package(
     targets: [
         .target(
             name: "HandyUIKit",
-            path: "Frameworks/HandyUIKit",
-            exclude: ["Frameworks/SupportingFiles"]
+            path: "Frameworks/HandyUIKit"
         ),
         .testTarget(
             name: "HandyUIKitTests",
-            dependencies: ["HandyUIKit"],
-            exclude: ["Tests/SupportingFiles"]
+            dependencies: ["HandyUIKit"]
         )
     ]
 )

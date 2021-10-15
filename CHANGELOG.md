@@ -31,6 +31,10 @@ If needed, pluralize to `Tasks`, `PRs` or `Authors` and list multiple entries se
 ### Security
 - None.
 
+## [1.9.3] - 2021-10-15
+### Fixed
+- Fixed a warning due to a wrong path in the Swift package manifest.
+
 ## [1.9.2] - 2020-05-07
 ### Added
 - Made `cornerRadius` and `IBDesignable`s available for override.
