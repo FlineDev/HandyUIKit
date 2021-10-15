@@ -4,8 +4,8 @@ width=600>
 </p>
 
 <p align="center">
-    <a href="https://app.bitrise.io/app/cce23f751e04f2e8">
-        <img src="https://app.bitrise.io/app/cce23f751e04f2e8/status.svg?token=-uKTcCmkHy_yh9vVitCxvA&branch=stable"
+    <a href="https://github.com/Flinesoft/HandyUIKit/actions/workflows/main.yml">
+        <img src="https://github.com/Flinesoft/HandyUIKit/actions/workflows/main.yml/badge.svg"
              alt="Build Status">
     </a>
     <a href="https://codebeat.co/projects/github-com-flinesoft-handyuikit">
