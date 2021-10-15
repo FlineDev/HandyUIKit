@@ -86,9 +86,9 @@
 		A11830F21E5996FD00CBE087 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		A11830F51E599BF600CBE087 /* StringExtTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtTests.swift; sourceTree = "<group>"; };
 		A14E0ABC1E1F986A00DFC788 /* HandyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A14E0AC51E1F986A00DFC788 /* HandyUIKit iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandyUIKit iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14E0AC51E1F986A00DFC788 /* HandyUIKit-iOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandyUIKit-iOS_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E0ADB1E1F987C00DFC788 /* HandyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A14E0AE31E1F987C00DFC788 /* HandyUIKit tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandyUIKit tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14E0AE31E1F987C00DFC788 /* HandyUIKit-tvOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandyUIKit-tvOS_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E0AF61E1F98E400DFC788 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14E0AFB1E1F98E400DFC788 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14E0B0E1E1F9B3100DFC788 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -182,9 +182,9 @@
 			isa = PBXGroup;
 			children = (
 				A14E0ABC1E1F986A00DFC788 /* HandyUIKit.framework */,
-				A14E0AC51E1F986A00DFC788 /* HandyUIKit iOS Tests.xctest */,
+				A14E0AC51E1F986A00DFC788 /* HandyUIKit-iOS_Tests.xctest */,
 				A14E0ADB1E1F987C00DFC788 /* HandyUIKit.framework */,
-				A14E0AE31E1F987C00DFC788 /* HandyUIKit tvOS Tests.xctest */,
+				A14E0AE31E1F987C00DFC788 /* HandyUIKit-tvOS_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,9 +295,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A14E0ABB1E1F986A00DFC788 /* HandyUIKit iOS */ = {
+		A14E0ABB1E1F986A00DFC788 /* HandyUIKit-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A14E0AD01E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit iOS" */;
+			buildConfigurationList = A14E0AD01E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-iOS" */;
 			buildPhases = (
 				A14E0AB71E1F986A00DFC788 /* Sources */,
 				A14E0AB81E1F986A00DFC788 /* Frameworks */,
@@ -309,14 +309,14 @@
 			);
 			dependencies = (
 			);
-			name = "HandyUIKit iOS";
+			name = "HandyUIKit-iOS";
 			productName = HandyUIKit;
 			productReference = A14E0ABC1E1F986A00DFC788 /* HandyUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A14E0AC41E1F986A00DFC788 /* HandyUIKit iOS Tests */ = {
+		A14E0AC41E1F986A00DFC788 /* HandyUIKit-iOS_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A14E0AD31E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit iOS Tests" */;
+			buildConfigurationList = A14E0AD31E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-iOS_Tests" */;
 			buildPhases = (
 				A14E0AC11E1F986A00DFC788 /* Sources */,
 				A14E0AC21E1F986A00DFC788 /* Frameworks */,
@@ -327,14 +327,14 @@
 			dependencies = (
 				A14E0AC81E1F986A00DFC788 /* PBXTargetDependency */,
 			);
-			name = "HandyUIKit iOS Tests";
+			name = "HandyUIKit-iOS_Tests";
 			productName = HandyUIKitTests;
-			productReference = A14E0AC51E1F986A00DFC788 /* HandyUIKit iOS Tests.xctest */;
+			productReference = A14E0AC51E1F986A00DFC788 /* HandyUIKit-iOS_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A14E0ADA1E1F987C00DFC788 /* HandyUIKit tvOS */ = {
+		A14E0ADA1E1F987C00DFC788 /* HandyUIKit-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A14E0AEC1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit tvOS" */;
+			buildConfigurationList = A14E0AEC1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-tvOS" */;
 			buildPhases = (
 				A14E0AD61E1F987C00DFC788 /* Sources */,
 				A14E0AD71E1F987C00DFC788 /* Frameworks */,
@@ -346,14 +346,14 @@
 			);
 			dependencies = (
 			);
-			name = "HandyUIKit tvOS";
+			name = "HandyUIKit-tvOS";
 			productName = "HandyUIKit-tvOS";
 			productReference = A14E0ADB1E1F987C00DFC788 /* HandyUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A14E0AE21E1F987C00DFC788 /* HandyUIKit tvOS Tests */ = {
+		A14E0AE21E1F987C00DFC788 /* HandyUIKit-tvOS_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A14E0AEF1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit tvOS Tests" */;
+			buildConfigurationList = A14E0AEF1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-tvOS_Tests" */;
 			buildPhases = (
 				A14E0ADF1E1F987C00DFC788 /* Sources */,
 				A14E0AE01E1F987C00DFC788 /* Frameworks */,
@@ -364,9 +364,9 @@
 			dependencies = (
 				A14E0AE61E1F987C00DFC788 /* PBXTargetDependency */,
 			);
-			name = "HandyUIKit tvOS Tests";
+			name = "HandyUIKit-tvOS_Tests";
 			productName = "HandyUIKit-tvOSTests";
-			productReference = A14E0AE31E1F987C00DFC788 /* HandyUIKit tvOS Tests.xctest */;
+			productReference = A14E0AE31E1F987C00DFC788 /* HandyUIKit-tvOS_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -376,7 +376,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = Flinesoft;
 				TargetAttributes = {
 					A14E0ABB1E1F986A00DFC788 = {
@@ -392,13 +392,13 @@
 					};
 					A14E0ADA1E1F987C00DFC788 = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1300;
 						ProvisioningStyle = Automatic;
 					};
 					A14E0AE21E1F987C00DFC788 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 767S6EFMJ8;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1300;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -416,10 +416,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A14E0ABB1E1F986A00DFC788 /* HandyUIKit iOS */,
-				A14E0AC41E1F986A00DFC788 /* HandyUIKit iOS Tests */,
-				A14E0ADA1E1F987C00DFC788 /* HandyUIKit tvOS */,
-				A14E0AE21E1F987C00DFC788 /* HandyUIKit tvOS Tests */,
+				A14E0ABB1E1F986A00DFC788 /* HandyUIKit-iOS */,
+				A14E0AC41E1F986A00DFC788 /* HandyUIKit-iOS_Tests */,
+				A14E0ADA1E1F987C00DFC788 /* HandyUIKit-tvOS */,
+				A14E0AE21E1F987C00DFC788 /* HandyUIKit-tvOS_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -560,12 +560,12 @@
 /* Begin PBXTargetDependency section */
 		A14E0AC81E1F986A00DFC788 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A14E0ABB1E1F986A00DFC788 /* HandyUIKit iOS */;
+			target = A14E0ABB1E1F986A00DFC788 /* HandyUIKit-iOS */;
 			targetProxy = A14E0AC71E1F986A00DFC788 /* PBXContainerItemProxy */;
 		};
 		A14E0AE61E1F987C00DFC788 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A14E0ADA1E1F987C00DFC788 /* HandyUIKit tvOS */;
+			target = A14E0ADA1E1F987C00DFC788 /* HandyUIKit-tvOS */;
 			targetProxy = A14E0AE51E1F987C00DFC788 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -596,6 +596,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -621,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -629,7 +630,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -660,6 +660,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -679,13 +680,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -711,6 +711,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -732,6 +733,7 @@
 				PRODUCT_NAME = HandyUIKit;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -745,6 +747,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -758,6 +761,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinesoft.HandyUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -779,6 +783,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -801,6 +806,7 @@
 				PRODUCT_NAME = HandyUIKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -816,7 +822,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flinesoft.HandyUIKit-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -830,7 +838,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flinesoft.HandyUIKit-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -846,7 +856,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A14E0AD01E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit iOS" */ = {
+		A14E0AD01E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A14E0AD11E1F986A00DFC788 /* Debug */,
@@ -855,7 +865,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A14E0AD31E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit iOS Tests" */ = {
+		A14E0AD31E1F986A00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-iOS_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A14E0AD41E1F986A00DFC788 /* Debug */,
@@ -864,7 +874,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A14E0AEC1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit tvOS" */ = {
+		A14E0AEC1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A14E0AED1E1F987C00DFC788 /* Debug */,
@@ -873,7 +883,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A14E0AEF1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit tvOS Tests" */ = {
+		A14E0AEF1E1F987C00DFC788 /* Build configuration list for PBXNativeTarget "HandyUIKit-tvOS_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A14E0AF01E1F987C00DFC788 /* Debug */,

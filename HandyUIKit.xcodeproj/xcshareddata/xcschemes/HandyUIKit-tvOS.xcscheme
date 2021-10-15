@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1140"
+   LastUpgradeVersion = "1300"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A14E0ADA1E1F987C00DFC788"
                BuildableName = "HandyUIKit.framework"
-               BlueprintName = "HandyUIKit tvOS"
+               BlueprintName = "HandyUIKit-tvOS"
                ReferencedContainer = "container:HandyUIKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +32,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A14E0ADA1E1F987C00DFC788"
             BuildableName = "HandyUIKit.framework"
-            BlueprintName = "HandyUIKit tvOS"
+            BlueprintName = "HandyUIKit-tvOS"
             ReferencedContainer = "container:HandyUIKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -42,8 +42,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A14E0AE21E1F987C00DFC788"
-               BuildableName = "HandyUIKit tvOS Tests.xctest"
-               BlueprintName = "HandyUIKit tvOS Tests"
+               BuildableName = "HandyUIKit-tvOS Tests.xctest"
+               BlueprintName = "HandyUIKit-tvOS_Tests"
                ReferencedContainer = "container:HandyUIKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -64,7 +64,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A14E0ADA1E1F987C00DFC788"
             BuildableName = "HandyUIKit.framework"
-            BlueprintName = "HandyUIKit tvOS"
+            BlueprintName = "HandyUIKit-tvOS"
             ReferencedContainer = "container:HandyUIKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,7 +80,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A14E0ADA1E1F987C00DFC788"
             BuildableName = "HandyUIKit.framework"
-            BlueprintName = "HandyUIKit tvOS"
+            BlueprintName = "HandyUIKit-tvOS"
             ReferencedContainer = "container:HandyUIKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
