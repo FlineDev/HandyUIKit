@@ -9,13 +9,11 @@ let package = Package(
     targets: [
         .target(
             name: "HandyUIKit",
-            path: "Frameworks/HandyUIKit",
-            exclude: ["Frameworks/SupportingFiles"]
+            path: "Frameworks/HandyUIKit"
         ),
         .testTarget(
             name: "HandyUIKitTests",
-            dependencies: ["HandyUIKit"],
-            exclude: ["Tests/SupportingFiles"]
+            dependencies: ["HandyUIKit"]
         )
     ]
 )
