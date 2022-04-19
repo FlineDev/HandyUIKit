@@ -4,15 +4,15 @@ width=600>
 </p>
 
 <p align="center">
-    <a href="https://github.com/Flinesoft/HandyUIKit/actions/workflows/main.yml">
-        <img src="https://github.com/Flinesoft/HandyUIKit/actions/workflows/main.yml/badge.svg"
+    <a href="https://github.com/FlineDev/HandyUIKit/actions/workflows/main.yml">
+        <img src="https://github.com/FlineDev/HandyUIKit/actions/workflows/main.yml/badge.svg"
              alt="Build Status">
     </a>
     <a href="https://codebeat.co/projects/github-com-flinesoft-handyuikit">
         <img src="https://codebeat.co/badges/01dd8c86-da28-4f46-9fb0-3aa38df2532a"
              alt="codebeat badge">
     </a>
-    <a href="https://github.com/Flinesoft/HandyUIKit/releases">
+    <a href="https://github.com/FlineDev/HandyUIKit/releases">
         <img src="https://img.shields.io/badge/Version-1.9.3-blue.svg"
              alt="Version: 1.9.3">
     </a>
@@ -20,7 +20,7 @@ width=600>
         alt="Swift: 5.0">
     <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-FF69B4.svg"
          alt="Platforms: iOS | tvOS">
-    <a href="https://github.com/Flinesoft/HandyUIKit/blob/stable/LICENSE.md">
+    <a href="https://github.com/FlineDev/HandyUIKit/blob/stable/LICENSE.md">
         <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg"
              alt="License: MIT">
     </a>
@@ -43,7 +43,7 @@ width=600>
 <a href="#installation">Installation</a>
   • <a href="#usage">Usage</a>
   • <a href="#donation">Donation</a>
-  • <a href="https://github.com/Flinesoft/HandyUIKit/issues">Issues</a>
+  • <a href="https://github.com/FlineDev/HandyUIKit/issues">Issues</a>
   • <a href="#contributing">Contributing</a>
   • <a href="#license">License</a>
 </p>
@@ -53,7 +53,7 @@ width=600>
 
 The goal of this library is to provide **handy UI related features** that we feel like they should have been part of the UIKit frameworks themselves. Therefore this library is intended to inherit solutions for common tasks that appear in daily programming and tries to comply to the same naming conventions as already used in the Apple frameworks.
 
-If you like this, please also checkout [HandySwift](https://github.com/Flinesoft/HandySwift) for handy features that didn't make it into the Swift standard library. It includes additions that are not UI related.
+If you like this, please also checkout [HandySwift](https://github.com/FlineDev/HandySwift) for handy features that didn't make it into the Swift standard library. It includes additions that are not UI related.
 
 ## Installation
 
@@ -366,14 +366,14 @@ This is an `IBDesignable` subclass of `UIImageView` which will automatically mak
 
 ## Donation
 
-BartyCrouch was brought to you by [Cihat Gündüz](https://github.com/Jeehut) in his free time. If you want to thank me and support the development of this project, please **make a small donation on [PayPal](https://paypal.me/Dschee/5EUR)**. In case you also like my other [open source contributions](https://github.com/Flinesoft) and [articles](https://medium.com/@Jeehut), please consider motivating me by **becoming a sponsor on [GitHub](https://github.com/sponsors/Jeehut)** or a **patron on [Patreon](https://www.patreon.com/Jeehut)**.
+BartyCrouch was brought to you by [Cihat Gündüz](https://github.com/Jeehut) in his free time. If you want to thank me and support the development of this project, please **make a small donation on [PayPal](https://paypal.me/Dschee/5EUR)**. In case you also like my other [open source contributions](https://github.com/FlineDev) and [articles](https://medium.com/@Jeehut), please consider motivating me by **becoming a sponsor on [GitHub](https://github.com/sponsors/Jeehut)** or a **patron on [Patreon](https://www.patreon.com/Jeehut)**.
 
 Thank you very much for any donation, it really helps out a lot! 💯
 
 
 ## Contributing
 
-See the file [CONTRIBUTING.md](https://github.com/Flinesoft/HandyUIKit/blob/stable/CONTRIBUTING.md).
+See the file [CONTRIBUTING.md](https://github.com/FlineDev/HandyUIKit/blob/stable/CONTRIBUTING.md).
 
 
 ## License
